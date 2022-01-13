@@ -20,7 +20,7 @@
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 22px;
         color: #4f4f4f;
         background-color: rgb(235, 235, 235);
@@ -28,7 +28,23 @@
       .body-bold {
         font-weight: bold;
       }
+      .row {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+      }
+      .component-full {
+        background-color: white;
+        padding: 16px;
+        
+      }
+      .component {
+        margin: 16px;
+        padding: 0;
+      }
 
+      .m-right {
+        margin-right: 12px;
+      }
       .autohide{
         background-color: white;
         position: fixed;
@@ -56,14 +72,64 @@
         background-color: transparent;
         color: unset;
       }
-
-      .list-item {
-        background-color: white;
+      .product-image {
+        padding-right: 12px;
+        text-align: center;
       }
-
-      .bg-danger {
-        background-color: #F31E1E !important;
-        margin-top: 6px;
+      .product-header {
+        margin-top: 12px;
+        margin-bottom: 16px;
+      }
+      .show-info {
+        margin-left: 12px;
+      }
+      .add-to-fav {
+        margin-left: 12px;
+      }
+      .product-name{
+        margin-bottom: 4px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .product-prices {
+        margin-bottom: 16px;
+      }
+      .product-old-price {
+        margin-right: 5px;
+      }
+      .product-prices .qty {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .gray-border-bottom{
+        border-bottom: 1px solid #e5e5e5 !important;
+      }
+      [class*="badge-"] {
+        height: 24px;
+        border-radius: 12px;
+        font-size: 16px;
+        color:white;
+        width: fit-content;
+        height: fit-content;
+        padding-inline: 8px;
+        display: inline-block;
+        margin-top: 8px;
+        margin-right: 4px;
+      }
+      .badge-red {
+        background-color: #F31E1E;
+      }
+      .badge-gray {
+        background-color: #4F4F4F;
+      }
+      .badge-normal {
+        background-color: white;
+        color: #4f4f4f;
+      }
+      .badge-green {
+        background-color: #DFF3E7;
+        color: #27AE60;
       }
       .gray-1 {
         color: #333333;
@@ -90,114 +156,73 @@
     <script>
       // JS for show/hide top nav bar
       document.addEventListener("DOMContentLoaded", function(){
-
-      el_autohide = document.querySelector('.autohide');
-
-      // add padding-top to bady (if necessary)
-      navbar_height = document.querySelector('.navbar').offsetHeight;
-      document.body.style.paddingTop = navbar_height + 'px';
-
-      if(el_autohide){
-          
-          var last_scroll_top = 0;
-          window.addEventListener('scroll', function() {
-                  let scroll_top = window.scrollY;
-              if(scroll_top < last_scroll_top) {
-                  el_autohide.classList.remove('scrolled-down');
-                  el_autohide.classList.add('scrolled-up');
-              }
-              else {
-                  el_autohide.classList.remove('scrolled-up');
-                  el_autohide.classList.add('scrolled-down');
-              }
-              last_scroll_top = scroll_top;
-
-          }); 
-          // window.addEventListener
-
-      }
-      // if
-
+        el_autohide = document.querySelector('.autohide');
+        // add padding-top to bady (if necessary)
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+        if(el_autohide){
+            var last_scroll_top = 0;
+            window.addEventListener('scroll', function() {
+                    let scroll_top = window.scrollY;
+                if(scroll_top < last_scroll_top) {
+                    el_autohide.classList.remove('scrolled-down');
+                    el_autohide.classList.add('scrolled-up');
+                }
+                else {
+                    el_autohide.classList.remove('scrolled-up');
+                    el_autohide.classList.add('scrolled-down');
+                }
+                last_scroll_top = scroll_top;
+            }); 
+            // window.addEventListener
+        }
       }); 
       // DOMContentLoaded  end
     </script>
 
+    <div id="main">
+    
+      <p class="text-center">PRODUCT LIST ITEM</p>
 
-
-    <!-- ============= COMPONENT ============== -->
-    <header class="row px-0">
-      <nav class="autohide navbar navbar-expand-lg">
-        <div class="container-fluid px-0">
-            <div class="col-6">
-              <a class="navbar-brand" href="#">Logo</a>
-            </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="col"><i class="far fa-calendar-alt"></i></div>
-                <div class="col"><i class="far fa-user-friends"></i></div>
-                <div class="col"><i class="far fa-bell"></i></div>
-                <div class="col"><i class="far fa-user-circle"></i></div>
-              </div>
-            </div>
-        </div> <!-- container-fluid.// -->
-      </nav>
-    </header>
-    <!-- ============ COMPONENT END ============= -->
-
-
-    <div class="container pb-5" id="main">
-      <h1 class="h5 mt-2">Поръчки <span style="color:gray;">(365)</span></h1>
-
-      <div id="filters">
-        <span class="badge rounded-pill bg-secondary fw-light p-2">Всички</span>
-        <span class="badge rounded-pill bg-light text-dark fw-light p-2">Заявени</span>
-        <span class="badge rounded-pill bg-light text-dark fw-light p-2">Приети</span>
-        <span class="badge rounded-pill bg-light text-dark fw-light p-2">Изпратени</span>
-      </div>
-
-      <p class=" text-center mt-5">PRODUCT LIST ITEM</p>
-      <!-- PRODUCT CARD / LIST ITEM COMPONENT -->
-      <div class="row py-3 shadow-sm list-item" id="product-list-item">
-        <div class="col-4">
+      <div class="row component-full">
+        <div class="col-4 product-image">
           <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
         </div>
         <div class="col-8">
           <div class="row">
-            <div class="col-6">
-              <span class="badge rounded-pill bg-danger">-15%</span>
+            <div class="col-8">
+              <span class="badge-red text-center body-bold">-15%</span>
             </div>
-            <div class="col-6">
-              <div class="float-end me-4">
-                <img src="img/info.svg" alt="Info" title="Info" />
-                <img src="img/star.svg" alt="Star" title="Star" />
+            <div class="col-4">
+              <div class="float-end">
+                <img src="img/info.svg" alt="Info" title="Info" class="show-info" />
+                <img src="img/star.svg" alt="Star" title="Star" class="add-to-fav"/>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12">
-              <ul class="ps-0" style="list-style-type: none;">
-                <li class="body-bold">
-                  Лютеница Дерони тъмно синя
-                </li>
-                <li class="gray-2">
-                  Код:3898309839850
-                </li>
-              </ul>
-              <div class="d-flex justify-content-between mt-3 py-2 border-bottom me-4">
-                <p class="gray-3 mb-0">Наличност:</p> 
-                <p class="body-bold green-2 mb-0"><img src="img/tick.svg" alt="Available" title="Available" /> 2345 бр.</p>
+              <div class="product-header">
+                <p class="product-name body-bold">Лютеница Дерони тъмно синя</p>
+                <p class="gray-2">Код: 3898309839850</p>
               </div>
-              <div class="d-flex justify-content-between border-bottom py-2 me-4">
-                <p class="gray-2 mb-0">1 бр.</p> 
-                <p class="gray-1 body-bold mb-0">12,98 лв.</p>
+              <div class="product-prices">
+                <div class="qty d-flex justify-content-between gray-border-bottom">
+                  <p class="gray-3">Наличност:</p> 
+                  <p class="body-bold green-2"><img src="img/tick.svg" alt="Available" title="Available" /> 2345 бр.</p>
+                </div>
+                <div class="qty d-flex justify-content-between gray-border-bottom">
+                  <p class="gray-2">1 бр.</p> 
+                  <p class="gray-1 body-bold">12,98 лв.</p>
+                </div>
+                <div class="qty d-flex justify-content-between gray-border-bottom">
+                  <p class="gray-2">3+ бр.</p> 
+                  <p class=""> <span class="product-old-price gray-3 text-decoration-line-through">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
+                </div>
               </div>
-              <div class="d-flex justify-content-between border-bottom py-2 me-4">
-                <p class="gray-2 mb-0">3+ бр.</p> 
-                <p class="mb-0"> <span class="gray-3 text-decoration-line-through me-2">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
-              </div>
-              <div class="d-flex justify-content-between mt-3 me-4">
-                <input class="form-control me-2 gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                <select class="form-select me-2 gray-2" aria-label="measure-select">
+              <div class="d-flex justify-content-between">
+                <input class="form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
+                <select class="form-select gray-2" aria-label="measure-select">
                   <option selected>Брой</option>
                   <option value="1">Стек</option>
                 </select>
@@ -207,112 +232,12 @@
           </div>
         </div>
       </div>
-      <!-- PRODUCT CARD COMPONENT END-->
-      
-      <p class="text-center mt-5">CART LIST ITEM</p>
-      <!-- CART LIST ITEM COMPONENT -->
-      <div class="row py-3 shadow-sm list-item" id="cart-list-item">
-        <div class="col-3 col-sm-2">
-          <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
-        </div>
-        <div class="col-9 col-sm-10">
-          <div class="row">
-            <div class="col-6">
-              <ul class="ps-0" style="list-style-type: none;">
-                <li class="body-bold">
-                  Лютеница Дерони тъмно синя
-                </li>
-                <li class="gray-2">
-                  Код:3898309839850
-                </li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <div class="float-end me-4">
-                <img src="img/trash.svg" alt="Remove" title="Remove" />
-              </div>
-            </div>
-          </div>
-        </div>
-          <div class="row ps-4">
-            <div class="col-12">
-              <div class="d-flex justify-content-between mt-3">
-                <input class="form-control me-2 gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                <select class="form-select gray-2" aria-label="measure-select">
-                  <option selected>Брой</option>
-                  <option value="1">Стек</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-12 mt-2">
-              <div class="d-grid gap-2">
-                <button type="button" class="btn btn-secondary">Обнови</button>
-              </div>
-              <div class="d-flex justify-content-between mt-3 py-2">
-                <p class="gray-3 mb-0">Ед. цена:</p> 
-                <p class="gray-1 mb-0">2,90 лв.</p>
-              </div>
-              <div class="d-flex justify-content-between py-2">
-                <p class="gray-2 mb-0">Общо:</p> 
-                <p class="gray-1 body-bold mb-0">95,80 лв.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-      <!-- CART LIST ITEM COMPONENT END -->
-
-      <p class="text-center mt-5">ORDER LIST ITEM</p>
-      <!-- ORDER LIST ITEM COMPONENT -->
-      <div class="row shadow-sm list-item" id="order-list-item">
-        <div class="col-12">
-          <div class="d-flex justify-content-between py-2">
-            <p class="gray-1 body-bold mb-0">№ 988998<span class="fw-normal ms-3 gray-3">25.12.2022 19:37</span></p> 
-            <p class="gray-1 body-bold mb-0">8939,90 лв.</p>
-          </div>
-          <div class="d-flex justify-content-between py-2">
-            <p class="gray-2 mb-0">ИМЕ НА ТЪРГОВЕЦА КОЕТО МОЖЕ ДА ПАДА НА ДВА РЕДА</p> 
-            <p class="gray-1 body-bold ms-5"><span class="badge rounded-pill bg-secondary">Отказана</span></p>
-          </div>
-        </div>
-      </div>
-      <!-- ORDER LIST ITEM COMPONENT END -->
-
-
-
-
-      
+    
     </div>
 
 
 
-    <footer class="container mt-5">
-      <div class="row text-center">
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-          <div class="col">
-            <i class="far fa-bars"></i>
-            <p>ПРОДУКТИ</p>
-          </div>
-          <div class="col">
-            <a href="/orders/">
-              <i class="far fa-list-alt"></i>
-              <p>ПОРЪЧКИ</p>
-            </a>
-          </div>
-          <div class="col">
-            <i class="far fa-search"></i>
-            <p>ТЪРСЕНЕ</p>
-          </div>
-          <div class="col">
-            <i class="far fa-star"></i>
-            <p>ЛЮБИМИ</p>
-          </div>
-          <div class="col">
-            <i class="far fa-shopping-cart"></i>
-            <p>КОЛИЧКА</p>
-          </div>
-        </nav>
-      </div>
-    </footer>
+    
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

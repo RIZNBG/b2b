@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>B2B</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4f4f4f;
+        background-color: rgb(235, 235, 235);
+      }
+      .body-bold {
+        font-weight: bold;
+      }
+
+      .component {
+        padding: 16px;
+        background-color: white;
+      }
+      .component [class*="col-"] {
+        padding: 0;
+      }
+      .m-right {
+        margin-right: 12px;
+      }
+      .autohide{
+        background-color: white;
+        position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1030;
+      }
+      .scrolled-down{
+        transform:translateY(-100%); transition: all 0.3s ease-in-out;
+      }
+      .scrolled-up{
+        transform:translateY(0); transition: all 0.3s ease-in-out;
+      }
+      .navbar p{
+        margin-bottom: 0px;
+        font-size: small;
+        color:rgb(165, 165, 165);
+      }
+
+
+      a {
+        text-decoration: none;
+        background-color: transparent;
+        color: unset;
+      }
+
+      [class*="badge-"] {
+        height: 24px;
+        border-radius: 12px;
+        color:white;
+      }
+      .badge-red {
+        background-color: #F31E1E;
+      }
+      .badge-gray {
+        background-color: #4F4F4F;
+      }
+      .badge-normal {
+        background-color: white;
+        color: #4f4f4f;
+      }
+      .gray-1 {
+        color: #333333;
+      }
+      .gray-2 {
+        color: #4F4F4F;
+      }
+      .gray-3 {
+        color: #828282;
+      }
+      .green-2 {
+        color: #27AE60;
+      }
+      .red-1 {
+        color: #F31E1E;
+      }
+      .btn-secondary {
+        background-color: #4F4F4F;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <script>
+      // JS for show/hide top nav bar
+      document.addEventListener("DOMContentLoaded", function(){
+
+      el_autohide = document.querySelector('.autohide');
+
+      // add padding-top to bady (if necessary)
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+
+      if(el_autohide){
+          
+          var last_scroll_top = 0;
+          window.addEventListener('scroll', function() {
+                  let scroll_top = window.scrollY;
+              if(scroll_top < last_scroll_top) {
+                  el_autohide.classList.remove('scrolled-down');
+                  el_autohide.classList.add('scrolled-up');
+              }
+              else {
+                  el_autohide.classList.remove('scrolled-up');
+                  el_autohide.classList.add('scrolled-down');
+              }
+              last_scroll_top = scroll_top;
+
+          }); 
+          // window.addEventListener
+
+      }
+      // if
+
+      }); 
+      // DOMContentLoaded  end
+    </script>
+
+
+
+    <!-- ============= COMPONENT ============== -->
+    <header class="row px-0">
+      <nav class="autohide navbar navbar-expand-lg">
+        <div class="container-fluid px-0">
+            <div class="col-6">
+              <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col"><i class="far fa-calendar-alt"></i></div>
+                <div class="col"><i class="far fa-user-friends"></i></div>
+                <div class="col"><i class="far fa-bell"></i></div>
+                <div class="col"><i class="far fa-user-circle"></i></div>
+              </div>
+            </div>
+        </div> <!-- container-fluid.// -->
+      </nav>
+    </header>
+    <!-- ============ COMPONENT END ============= -->
+
+
+
+    
+
+    <div class="container pb-5" id="main">
+      <h1 class="h5 mt-2">Поръчки <span style="color:gray;">(365)</span></h1>
+
+      <div id="filters">
+        <span class="badge-gray rounded-pill bg-secondary p-2">Всички</span>
+        <span class="badge-normal rounded-pill bg-light text-dark p-2">Заявени</span>
+        <span class="badge-normal rounded-pill text-dark p-2">Приети</span>
+        <span class="badge-normal rounded-pill text-dark p-2">Изпратени</span>
+      </div>
+
+      <p class=" text-center mt-5">PRODUCT LIST ITEM</p>
+      <!-- PRODUCT CARD / LIST ITEM COMPONENT -->
+      <div class="row py-3 shadow-sm component" id="product-list-item">
+        <div class="col-4">
+          <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-6">
+              <div class="badge-red text-center body-bold">-15%</div>
+            </div>
+            <div class="col-6">
+              <div class="float-end">
+                <img src="img/info.svg" alt="Info" title="Info" />
+                <img src="img/star.svg" alt="Star" title="Star" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <ul class="ps-0" style="list-style-type: none;">
+                <li class="body-bold">
+                  Лютеница Дерони тъмно синя
+                </li>
+                <li class="gray-2">
+                  Код:3898309839850
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between border-bottom">
+                <p class="gray-3 mb-0">Наличност:</p> 
+                <p class="body-bold green-2 mb-0"><img src="img/tick.svg" alt="Available" title="Available" /> 2345 бр.</p>
+              </div>
+              <div class="d-flex justify-content-between border-bottom">
+                <p class="gray-2 mb-0">1 бр.</p> 
+                <p class="gray-1 body-bold mb-0">12,98 лв.</p>
+              </div>
+              <div class="d-flex justify-content-between border-bottom">
+                <p class="gray-2 mb-0">3+ бр.</p> 
+                <p class="mb-0"> <span class="gray-3 text-decoration-line-through">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <input class="form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
+                <select class="form-select gray-2" aria-label="measure-select">
+                  <option selected>Брой</option>
+                  <option value="1">Стек</option>
+                </select>
+                <button type="button" class="btn btn-secondary"><img src="img/shopping-cart.svg" alt="Add" title="Add" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCT CARD COMPONENT END-->
+      
+      <div class="component">
+
+      </div>
+
+
+      <p class="text-center mt-5">CART LIST ITEM</p>
+      <!-- CART LIST ITEM COMPONENT -->
+      <div class="row py-3 shadow-sm list-item" id="cart-list-item">
+        <div class="col-3 col-sm-2">
+          <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
+        </div>
+        <div class="col-9 col-sm-10">
+          <div class="row">
+            <div class="col-6">
+              <ul class="ps-0" style="list-style-type: none;">
+                <li class="body-bold">
+                  Лютеница Дерони тъмно синя
+                </li>
+                <li class="gray-2">
+                  Код:3898309839850
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="float-end me-4">
+                <img src="img/trash.svg" alt="Remove" title="Remove" />
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row ps-4">
+            <div class="col-12">
+              <div class="d-flex justify-content-between mt-3">
+                <input class="form-control me-2 gray-2" type="number" placeholder="Input" aria-label="qty-input">
+                <select class="form-select gray-2" aria-label="measure-select">
+                  <option selected>Брой</option>
+                  <option value="1">Стек</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 mt-2">
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-secondary">Обнови</button>
+              </div>
+              <div class="d-flex justify-content-between mt-3 py-2">
+                <p class="gray-3 mb-0">Ед. цена:</p> 
+                <p class="gray-1 mb-0">2,90 лв.</p>
+              </div>
+              <div class="d-flex justify-content-between py-2">
+                <p class="gray-2 mb-0">Общо:</p> 
+                <p class="gray-1 body-bold mb-0">95,80 лв.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- CART LIST ITEM COMPONENT END -->
+
+      <p class="text-center mt-5">ORDER LIST ITEM</p>
+      <!-- ORDER LIST ITEM COMPONENT -->
+      <div class="row shadow-sm list-item" id="order-list-item">
+        <div class="col-12">
+          <div class="d-flex justify-content-between py-2">
+            <p class="gray-1 body-bold mb-0">№ 988998<span class="ms-3 gray-3">25.12.2022 19:37</span></p> 
+            <p class="gray-1 body-bold mb-0">8939,90 лв.</p>
+          </div>
+          <div class="d-flex justify-content-between py-2">
+            <p class="gray-2 mb-0">ИМЕ НА ТЪРГОВЕЦА КОЕТО МОЖЕ ДА ПАДА НА ДВА РЕДА</p> 
+            <p class="gray-1 body-bold ms-5"><span class="badge rounded-pill bg-secondary">Отказана</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- ORDER LIST ITEM COMPONENT END -->
+
+
+
+
+      
+    </div>
+
+
+
+    <footer class="container mt-5">
+      <div class="row text-center">
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+          <div class="col">
+            <i class="far fa-bars"></i>
+            <p>ПРОДУКТИ</p>
+          </div>
+          <div class="col">
+            <a href="/orders/">
+              <i class="far fa-list-alt"></i>
+              <p>ПОРЪЧКИ</p>
+            </a>
+          </div>
+          <div class="col">
+            <i class="far fa-search"></i>
+            <p>ТЪРСЕНЕ</p>
+          </div>
+          <div class="col">
+            <i class="far fa-star"></i>
+            <p>ЛЮБИМИ</p>
+          </div>
+          <div class="col">
+            <i class="far fa-shopping-cart"></i>
+            <p>КОЛИЧКА</p>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
