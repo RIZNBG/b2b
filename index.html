@@ -80,6 +80,12 @@
         margin-top: 12px;
         margin-bottom: 16px;
       }
+      .product-footer .product-qty {
+        margin-right: 8px;
+      }
+      .product-footer .product-measure {
+        margin-right: 8px;
+      }
       .show-info {
         margin-left: 12px;
       }
@@ -190,10 +196,10 @@
         </div>
         <div class="col-8">
           <div class="row">
-            <div class="col-8">
+            <div class="col-6 col-sm-8">
               <span class="badge-red text-center body-bold">-15%</span>
             </div>
-            <div class="col-4">
+            <div class="col-6 col-sm-4">
               <div class="float-end">
                 <img src="img/info.svg" alt="Info" title="Info" class="show-info" />
                 <img src="img/star.svg" alt="Star" title="Star" class="add-to-fav"/>
@@ -220,9 +226,9 @@
                   <p class=""> <span class="product-old-price gray-3 text-decoration-line-through">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
                 </div>
               </div>
-              <div class="d-flex justify-content-between">
-                <input class="form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                <select class="form-select gray-2" aria-label="measure-select">
+              <div class="product-footer d-flex justify-content-between">
+                <input class="product-qty form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
+                <select class="product-measure form-select gray-2" aria-label="measure-select">
                   <option selected>Брой</option>
                   <option value="1">Стек</option>
                 </select>
