@@ -35,7 +35,6 @@ p {
   height: 24px;
   border-radius: 12px;
   font-size: 16px;
-  color:white;
   width: fit-content;
   height: fit-content;
   padding-inline: 8px;
@@ -43,7 +42,37 @@ p {
   margin-top: 8px;
   margin-right: 4px;
 }
-
+.badge-red {
+  color:white;
+  background-color: #F31E1E;
+}
+.badge-red-pale {
+  color: #F31E1E;
+  background: rgba(243, 30, 30, 0.15)
+}
+.badge-blue {
+  color:white;
+  background-color: #2F80ED;
+}
+.badge-blue-pale {
+  color: #2F80ED;
+  background: rgba(47, 128, 237, 0.15)
+}
+.badge-green {
+  background-color: #219653;
+  color: white;
+}
+.badge-green-pale {
+  color: #219653;
+  background: rgba(33, 150, 83, 0.15);
+}
+.badge-gray {
+  background-color: #4F4F4F;
+}
+.badge-normal {
+  background-color: white;
+  color: #4f4f4f;
+}
 .btn {
   font-size: 16px !important;
   line-height: 22px !important;

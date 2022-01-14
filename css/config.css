@@ -31,20 +31,6 @@
   line-height: 30px;
   font-weight: 500;
 }
-.badge-red {
-  background-color: #F31E1E;
-}
-.badge-gray {
-  background-color: #4F4F4F;
-}
-.badge-normal {
-  background-color: white;
-  color: #4f4f4f;
-}
-.badge-green {
-  background-color: #DFF3E7;
-  color: #27AE60;
-}
 .gray-1 {
   color: #333333;
 }
@@ -89,4 +75,16 @@
 }
 .br-xl {
   border-radius: 32px;
+}
+.shadow-sm {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.04);
+}
+.shadow-md {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.04), 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+.shadow-lg {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04), 0px 8px 32px rgba(0, 0, 0, 0.08);
+}
+.shadow-xl {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06), 0px 24px 60px rgba(0, 0, 0, 0.12);
 }
