@@ -31,10 +31,13 @@ p {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-[class*="badge-"] {
-  height: 24px;
-  border-radius: 12px;
+.badge {
+  font-weight: 400;
   font-size: 16px;
+  line-height: 22px;
+}
+[class*="badge-"] {
+  border-radius: 12px;
   width: fit-content;
   height: fit-content;
   padding-inline: 8px;
@@ -74,12 +77,18 @@ p {
   color: #219653;
   background: rgba(33, 150, 83, 0.15);
 }
-.badge-gray {
-  background-color: #4F4F4F;
-}
-.badge-normal {
+.filter-badge {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 4px;
   background-color: white;
-  color: #4f4f4f;
+  color: #828282;
+}
+.filter-badge.selected {
+  background-color: #4F4F4F;
+  color:white;
 }
 .btn {
   font-size: 16px !important;
