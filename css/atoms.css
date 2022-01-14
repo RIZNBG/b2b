@@ -89,11 +89,7 @@ p {
   color: #f2f2f2;
   border: none;
 }
-.btn:hover {
-  background-color: #E0E0E0;
-  color: #4F4F4F;
-}
-.btn.light {
+.btn:hover, .btn.light {
   background-color: #E0E0E0;
   color: #4F4F4F;
 }
@@ -140,24 +136,21 @@ p {
   background-color: transparent;
   color: #4F4F4F;
 }
-input {
+input, select {
   color: #828282 !important;
   border: 1px solid #E0E0E0;
 }
-input:hover {
+input:hover, select:hover {
   border: 1px solid #BDBDBD;
 }
-input:focus {
+input:focus, select:focus {
   color: #4f4f4f !important;
   border: 1px solid #828282 !important;
 }
-input:focus::placeholder {
+input:focus::placeholder, select:focus::placeholder {
   color: #4f4f4f !important;
-}
-input.border-gray-3::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #4f4f4f;
   opacity: 1; /* Firefox */
 }
-input:invalid {
+input:invalid, select:invalid {
   border: 1px solid #F31E1E !important;
 }
