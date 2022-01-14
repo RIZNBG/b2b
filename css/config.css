@@ -75,3 +75,18 @@
 .red-1 {
   color: #F31E1E;
 }
+.bg-xs {
+  border-radius: 4px;
+}
+.br-sm {
+  border-radius: 8px;
+}
+.br-md {
+  border-radius: 12px;
+}
+.br-lg {
+  border-radius: 16px;
+}
+.br-xl {
+  border-radius: 32px;
+}
