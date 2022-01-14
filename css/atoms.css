@@ -52,23 +52,54 @@ p {
   color: #f2f2f2;
   border: none;
 }
+.btn:hover {
+  background-color: #E0E0E0;
+  color: #4F4F4F;
+}
+.btn.light {
+  background-color: #E0E0E0;
+  color: #4F4F4F;
+}
+.btn.light:hover {
+  background-color: #4F4F4F;
+  color: #f2f2f2;
+}
 .btn-xs {
-  padding: 1px 14px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   font-weight: 400;
 }
-.btn-xs .light {
-  background-color: ;
-  color: ;
-}
 .btn-sm {
-  padding: 5px 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .btn-md {
-  padding: 7px 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .btn-lg {
-  padding: 9px 24px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
-.btn-lg .light {
-
+.btn-xs.light {
+  background-color: white;
+  color: #828282;
+}
+.btn-xs.ghost {
+  background-color: transparent;
+  color: #4F4F4F;
+  border: 1px solid #4F4F4F;
+}
+.btn-xs.ghost.light {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.btn-xs.ghost:hover {
+  background-color: transparent;
+  color: white;
+}
+.btn-xs.ghost.light:hover {
+  background-color: transparent;
+  color: #4F4F4F;
 }
