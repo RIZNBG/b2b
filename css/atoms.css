@@ -50,6 +50,14 @@ p {
   color: #F31E1E;
   background: rgba(243, 30, 30, 0.15)
 }
+.badge-orange {
+  color:white;
+  background-color: #F99400;
+}
+.badge-orange-pale {
+  color: #F99400;
+  background: rgba(249, 148, 0, 0.15)
+}
 .badge-blue {
   color:white;
   background-color: #2F80ED;
