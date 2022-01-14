@@ -43,6 +43,7 @@
                 <p style="background-color: #27AE60;">Green 2 #27AE60</p>
                 <p style="background-color: #6FCF97;">Green 3 #6FCF97</p>
                 <p style="background-color: #F31E1E;">Red 1 #F31E1E</p>
+                <p style="background-color: #F99400;">Orange 1 #F99400</p>
             </div>
           </div>
           <div class="col-6 p-2" style="border: 1px dotted #4f4f4f; border-radius: 5px;">
@@ -109,12 +110,16 @@
 
           <div class="col-6 p-2 pb-4" style="border: 1px dotted #4f4f4f; border-radius: 5px;">
               <p class="text-center"><u>Inputs</u></p>
-              <hr>
-              <input class="product-qty form-control gray-2 mb-2" type="number" placeholder="Input" aria-label="qty-input">
-              <input class="product-qty form-control gray-2 mb-2" type="number" placeholder="Input" aria-label="qty-input">
-              <input class="product-qty form-control gray-2 mb-2" type="number" placeholder="Input" aria-label="qty-input">
-              <input class="product-qty form-control gray-2 mb-2" type="number" placeholder="Input" aria-label="qty-input">
-
+              <hr> 
+              General state:
+              <input class="form-control gray-2 mb-2" type="text" placeholder="Input" aria-label="qty-input">
+              On hover:
+              <input class="form-control gray-2 mb-2" style="border: 1px solid #BDBDBD;" type="text" placeholder="Input" aria-label="qty-input">
+              On press:
+              <input class="form-control gray-2 mb-2" style="color: #4f4f4f !important; border: 1px solid #828282 !important;" type="text" value="Input" aria-label="qty-input">
+              When invalid:
+              <input class="form-control gray-2" style="border: 1px solid #F31E1E !important;" type="text" placeholder="Input" aria-label="qty-input">
+              <label style="color:#F31E1E">Error message</label>
           </div>
       </div>
     </div>
