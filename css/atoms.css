@@ -91,8 +91,8 @@ p {
   color:white;
 }
 .btn {
-  font-size: 16px !important;
-  line-height: 22px !important;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 700;
   background-color: #4F4F4F;
   color: #f2f2f2;
@@ -146,20 +146,20 @@ p {
   color: #4F4F4F;
 }
 input, select {
-  color: #828282 !important;
+  color: #828282;
   border: 1px solid #E0E0E0;
 }
 input:hover, select:hover {
   border: 1px solid #BDBDBD;
 }
 input:focus, select:focus {
-  color: #4f4f4f !important;
+  color: #4f4f4f;
   border: 1px solid #828282 !important;
 }
 input:focus::placeholder, select:focus::placeholder {
-  color: #4f4f4f !important;
+  color: #4f4f4f;
   opacity: 1; /* Firefox */
 }
 input:invalid, select:invalid {
-  border: 1px solid #F31E1E !important;
+  border: 1px solid #F31E1E;
 }
