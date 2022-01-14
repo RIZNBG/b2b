@@ -1,0 +1,74 @@
+.product-image {
+  padding-right: 12px;
+  text-align: center;
+}
+.product-header {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+.product-footer .product-qty {
+  margin-right: 8px;
+}
+.product-footer .product-measure {
+  margin-right: 8px;
+}
+.product-action-icons img {
+  margin-left: 12px;
+}
+.product-name{
+  margin-bottom: 4px;
+}
+p {
+  margin-bottom: 0;
+}
+.product-footer {
+  margin-top: 16px;
+}
+.product-old-price {
+  margin-right: 5px;
+}
+.product-prices .qty {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+[class*="badge-"] {
+  height: 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  color:white;
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 8px;
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 4px;
+}
+
+.btn {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  font-weight: 700;
+  background-color: #4F4F4F;
+  color: #f2f2f2;
+  border: none;
+}
+.btn-xs {
+  padding: 1px 14px;
+  font-weight: 400;
+}
+.btn-xs .light {
+  background-color: ;
+  color: ;
+}
+.btn-sm {
+  padding: 5px 16px;
+}
+.btn-md {
+  padding: 7px 12px;
+}
+.btn-lg {
+  padding: 9px 24px;
+}
+.btn-lg .light {
+
+}

@@ -1,0 +1,68 @@
+.gray-border-bottom{
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.caption {
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+.body-medium {
+  font-weight: 500;
+}
+.body-bold {
+  font-weight: bold;
+}
+.subtitle-regular {
+  font-size: 18px;
+  line-height: 24px;
+}
+.subtitle-medium {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.subtitle-big-regular {
+  font-size: 24px;
+  line-height: 30px;
+}
+.subtitle-big-medium {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.badge-red {
+  background-color: #F31E1E;
+}
+.badge-gray {
+  background-color: #4F4F4F;
+}
+.badge-normal {
+  background-color: white;
+  color: #4f4f4f;
+}
+.badge-green {
+  background-color: #DFF3E7;
+  color: #27AE60;
+}
+.gray-1 {
+  color: #333333;
+}
+.gray-2 {
+  color: #4F4F4F;
+}
+.gray-3 {
+  color: #828282;
+}
+.gray-5 {
+  color: #e0e0e0;
+}
+.gray-6 {
+  color: #f2f2f2
+}
+.green-2 {
+  color: #27AE60;
+}
+.red-1 {
+  color: #F31E1E;
+}

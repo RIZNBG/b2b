@@ -10,141 +10,26 @@
     <link rel="icon" type="image/png" href="icon.png"/>
     <title>B2B</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/atoms.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <style type="text/css">
-      
-    </style>
     
   </head>
   <body>
-    <script>
-      // JS for show/hide top nav bar
-      document.addEventListener("DOMContentLoaded", function(){
-        el_autohide = document.querySelector('.autohide');
-        // add padding-top to bady (if necessary)
-        navbar_height = document.querySelector('.navbar').offsetHeight;
-        document.body.style.paddingTop = navbar_height + 'px';
-        if(el_autohide){
-            var last_scroll_top = 0;
-            window.addEventListener('scroll', function() {
-                    let scroll_top = window.scrollY;
-                if(scroll_top < last_scroll_top) {
-                    el_autohide.classList.remove('scrolled-down');
-                    el_autohide.classList.add('scrolled-up');
-                }
-                else {
-                    el_autohide.classList.remove('scrolled-up');
-                    el_autohide.classList.add('scrolled-down');
-                }
-                last_scroll_top = scroll_top;
-            }); 
-            // window.addEventListener
-        }
-      }); 
-      // DOMContentLoaded  end
-    </script>
 
     <div id="main">
-      <p class="text-center mt-5">
-        <a href="/atoms/" class="btn btn-info">Atoms</a>
+      <p class="ms-3 mt-3">
+        <span class="text-center mt-5">
+          <a href="/atoms/" class="btn btn-info">Atoms</a>
+        </span>
+        <span class="text-center mt-5">
+          <a href="/components/" class="btn btn-info">Components</a>
+        </span>
       </p>
-      <p class="text-center mt-4 mb-2">PRODUCT LIST ITEM</p>
-      <div class="row component-full">   
-        <div class="col-4 product-image">
-          <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
-        </div>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-6 col-sm-8">
-              <span class="badge-red text-center body-bold">-15%</span>
-            </div>
-            <div class="col-6 col-sm-4">
-              <div class="float-end product-action-icons">
-                <img src="img/info.svg" alt="Info" title="Info" />
-                <img src="img/star.svg" alt="Star" title="Star" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="product-header">
-                <p class="product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                <p>Код: 3898309839850</p>
-              </div>
-              <div class="product-prices">
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p class="gray-3">Наличност:</p> 
-                  <p class="body-bold green-2"><img src="img/tick.svg" alt="Available" title="Available" /> 2345 бр.</p>
-                </div>
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p>1 бр.</p> 
-                  <p class="gray-1 body-bold">12,98 лв.</p>
-                </div>
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p>3+ бр.</p> 
-                  <p class=""> <span class="product-old-price gray-3 text-decoration-line-through">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
-                </div>
-              </div>
-              <div class="product-footer d-flex justify-content-between">
-                <input class="product-qty form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                <select class="product-measure form-select gray-2" aria-label="measure-select">
-                  <option selected>Брой</option>
-                  <option value="1">Стек</option>
-                </select>
-                <button type="button" class="btn btn-secondary"><img src="img/shopping-cart.svg" alt="Add" title="Add" /></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <p class="text-center mt-4 mb-2">PRODUCT LIST ITEM (UNAVAILABLE)</p>
-      <div class="row component-full">   
-        <div class="col-4 product-image">
-          <img src="img/product.jpg" alt="Product" title="Product" class="img-fluid" />
-        </div>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-6 col-sm-8">
-              <span class="badge-red text-center body-bold">-15%</span>
-            </div>
-            <div class="col-6 col-sm-4">
-              <div class="float-end product-action-icons">
-                <img src="img/info.svg" alt="Info" title="Info" />
-                <img src="img/star.svg" alt="Star" title="Star" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="product-header">
-                <p class="product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                <p>Код: 3898309839850</p>
-              </div>
-              <div class="product-prices">
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p class="gray-3">Наличност:</p> 
-                  <p>Неналичен</p>
-                </div>
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p>1 бр.</p> 
-                  <p class="gray-1 body-bold">12,98 лв.</p>
-                </div>
-                <div class="qty d-flex justify-content-between gray-border-bottom">
-                  <p>3+ бр.</p> 
-                  <p class=""> <span class="product-old-price gray-3 text-decoration-line-through">12,98 лв.</span><span class="body-bold red-1">12,98 лв.</span></p>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
