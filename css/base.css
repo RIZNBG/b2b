@@ -138,6 +138,9 @@ textarea {
     background-color: transparent;
     color: unset;
   }
+  .accordion-button, .accordion-body {
+    padding: 16px;
+  }
   
   
 /* ==========================================================================
