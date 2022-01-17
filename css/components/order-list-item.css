@@ -1,3 +1,6 @@
 .order-details {
   padding-right: 16px;
 }
+.order-date, .order-price {
+  margin-bottom: 8px;
+}
