@@ -1,4 +1,4 @@
-.gray-border-bottom{
+.gray-border-bottom {
   border-bottom: 1px solid #e5e5e5 !important;
 }
 .caption {
@@ -35,34 +35,34 @@
   color: #333333;
 }
 .gray-2 {
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 .gray-3 {
   color: #828282;
 }
 .gray-4 {
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .gray-5 {
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 .gray-6 {
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 .green-1 {
   color: #219653;
 }
 .green-2 {
-  color: #27AE60;
+  color: #27ae60;
 }
 .green-3 {
-  color: #6FCF97;
+  color: #6fcf97;
 }
 .red-1 {
-  color: #F31E1E;
+  color: #f31e1e;
 }
 .orange-1 {
-  color: #F99400;
+  color: #f99400;
 }
 .bg-xs {
   border-radius: 4px;
@@ -89,5 +89,6 @@
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04), 0px 8px 32px rgba(0, 0, 0, 0.08);
 }
 .shadow-xl {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06), 0px 24px 60px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06),
+    0px 24px 60px rgba(0, 0, 0, 0.12);
 }

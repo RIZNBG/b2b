@@ -22,9 +22,9 @@
 </head>
 
 <body>
-    <!-- ============= HEADER COMPONENT (with hiding) ============== -->
-    <header class="container-fluid px-0">
-        <nav class="row autohide navbar navbar-expand-lg">
+    <!-- ============= HEADER COMPONENT (with hiding and clients names) ============== -->
+    <header class="container-fluid autohide px-0">
+        <nav class="row navbar navbar-expand-lg">
             <div class="col-4">
                 <a class="navbar-brand" href="/"><img src="assets/logo.png" title="logo" alt="logo" /></a>
             </div>
@@ -37,6 +37,20 @@
                 </div>
             </div>
         </nav>
+        <div class="accordion position-relative">
+            <div class="accordion-item position-absolute w-100 border-0" id="clientNamesAccordion">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed chosen-client-collapse rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ИМЕ НА ИЗБРАН КЛИЕНТ
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
     </header> <!-- container-fluid.// -->
     <!-- ============ HEADER COMPONENT END (with hiding) ============= -->
 
@@ -63,20 +77,6 @@
         </header> <!-- container-fluid.// -->
         <!-- ============ HEADER COMPONENT END (without hiding) ============= -->
 
-        <div class="accordion" id="clientNamesAccordion">
-            <div class="accordion-item position-absolute w-100">
-                <h2 class="accordion-header" id="clientName">
-                    <button class="accordion-button chosen-client-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        ИМЕ НА ИЗБРАН КЛИЕНТ
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse hide position-relative" aria-labelledby="clientName" data-bs-parent="#clientNamesAccordion">
-                    <div class="accordion-body">
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <br />
 
@@ -186,14 +186,18 @@
             let el_autohide = document.querySelector('.autohide');
             // add padding-top to bady (if necessary)
             let navbar_height = document.querySelector('.navbar').offsetHeight;
+            let clientsNames = document.querySelector('#clientNamesAccordion').offsetHeight;
 
-            document.body.style.paddingTop = navbar_height + 'px';
+            console.log(clientsNames);
+
+            document.body.style.paddingTop = navbar_height + clientsNames + 'px';
 
             if (el_autohide) {
                 let last_scroll_top = 0;
 
                 window.addEventListener('scroll', function () {
                     let scroll_top = window.scrollY;
+
                     if (scroll_top < last_scroll_top) {
                         el_autohide.classList.remove('scrolled-down');
                         el_autohide.classList.add('scrolled-up');
@@ -202,6 +206,7 @@
                         el_autohide.classList.remove('scrolled-up');
                         el_autohide.classList.add('scrolled-down');
                     }
+
                     last_scroll_top = scroll_top;
                 });
                 // window.addEventListener
