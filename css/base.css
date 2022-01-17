@@ -103,6 +103,9 @@ body {
 p {
   margin-bottom: 0;
 }
+#main {
+  margin-bottom: 16px;
+}
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
