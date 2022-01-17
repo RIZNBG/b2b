@@ -1,0 +1,16 @@
+.client-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.client-properties .client-property {
+  padding: 0 16px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.client-properties .client-property:last-child {
+  padding: 0;
+}
+.client-properties .client-property-alert {
+  color: red;
+}
