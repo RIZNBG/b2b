@@ -19,6 +19,7 @@
   height: 32px;
   width: 32px;
   top: 9px;
+  transition: transform 250ms ease;
 }
 .client-options:hover {
   height: 32px;
@@ -26,5 +27,6 @@
   top: 9px;
 }
 .client-options.collapsed {
+  transition: transform 250ms ease;
   transform: rotate(180deg);
 }
