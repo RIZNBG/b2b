@@ -32,23 +32,38 @@
             </div>
             <div class="col-8">
                 <div class="header-nav row float-end d-flex align-items-center">
-                    <div class="col header-nav-icon"><img src="assets/calendar.svg" alt="Calendar" title="Calendar" /></div>
-                    <div class="col header-nav-icon"><img src="assets/clients.svg" alt="Clients" title="Clients" /></i></div>
-                    <div class="col header-nav-icon"><img src="assets/notifications.svg" alt="Notifications" title="Notifications" /></div>
-                    <div class="col header-nav-icon profile text-center body-bold">ИГ</div>
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/calendar.svg" alt="Calendar" title="Calendar" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/clients.svg" alt="Clients" title="Clients" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/notifications.svg" alt="Notifications" title="Notifications" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon profile text-center body-bold">
+                        <a href="#" title="">ИГ</a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="accordion position-relative">
             <div class="accordion-item position-absolute w-100 border-0" id="clientNamesAccordion">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed chosen-client-collapse rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed chosen-client-collapse rounded-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         ИМЕ НА ИЗБРАН КЛИЕНТ
                     </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div id="collapseThree" class="accordion-collapse collapse bg-gray-2" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex justify-content-between">
+                        <a href="#" title="Профил" class="btn btn-xs ghost light">Профил</a>
+                        <a href="#" title="Отмени" class="btn btn-xs light">Отмени</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +194,7 @@
 
         <p class="text-center mt-4 mb-2">CART LIST ITEM (UNAVAILABLE)</p>
         <div class="row component-full">
-            
+
         </div>
     </div>
 
