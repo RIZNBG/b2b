@@ -1,0 +1,21 @@
+nav.navbar {
+  background-color: white;
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px; 
+}
+.header-nav-icon {
+  margin-left: 16px;
+}
+.header-nav-icon.profile {
+  width: 36px; 
+  padding: 7px;
+  background-color: #4f4f4f; 
+  color: white; 
+  border-radius: 100%; 
+}
+.chosen-client-collapse {
+  height: 32px;
+  background-color: #828282 !important;
+  color: white !important;
+}
