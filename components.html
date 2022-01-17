@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/components/product-list-item.css" />
     <link rel="stylesheet" href="./css/components/client-list-item.css" />
+    <link rel="stylesheet" href="./css/components/bottom-bar.css" />
 </head>
 
 <body>
     <!-- ============= HEADER COMPONENT (with hiding and clients names) ============== -->
     <header class="container-fluid autohide px-0">
-        <nav class="row navbar navbar-expand-lg">
+        <nav class="row navbar header-bar navbar-expand-lg">
             <div class="col-4">
                 <a class="navbar-brand" href="/"><img src="assets/logo.png" title="logo" alt="logo" /></a>
             </div>
@@ -105,6 +106,36 @@
         </header> <!-- container-fluid.// -->
         <!-- ============ HEADER COMPONENT END (without hiding) ============= -->
 
+        <br />
+
+        <!-- ============= BOTTOM BAR COMPONENT ============== -->
+        <nav class="navbar fixed-bottom bottom-bar">
+            <div class="container-fluid">
+                <div class="row row-cols-5 w-100">
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/products.svg" alt="Продукти" />
+                        <small class="bottom-bar-action-title">ПРОДУКТИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/orders.svg" alt="Поръчки" />
+                        <small class="bottom-bar-action-title">ПОРЪЧКИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/search.svg" alt="Търсене" />
+                        <small class="bottom-bar-action-title">ТЪРСЕНЕ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/star.svg" alt="Любими" />
+                        <small class="bottom-bar-action-title">ЛЮБИМИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/cart.svg" alt="Количка" />
+                        <small class="bottom-bar-action-title">КОЛИЧКА</small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- ============= BOTTOM BAR COMPONENT ============== -->
 
         <br />
 
@@ -137,6 +168,8 @@
             </div>
         </div>
         <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+
+        <br />
 
         <p class="text-center mt-4 mb-2">PRODUCT LIST ITEM</p>
         <div class="row component-full">
@@ -188,6 +221,7 @@
             </div>
         </div>
 
+        <br />
 
         <p class="text-center mt-4 mb-2">PRODUCT LIST ITEM (UNAVAILABLE)</p>
         <div class="row component-full">
@@ -232,6 +266,7 @@
             </div>
         </div>
 
+        <br />
 
         <p class="text-center mt-4 mb-2">CART LIST ITEM</p>
         <div class="row component-full">

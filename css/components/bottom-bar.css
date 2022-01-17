@@ -1,0 +1,19 @@
+nav.bottom-bar {
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-bar-action .bottom-bar-action-title {
+  transition: color 250ms ease;
+}
+.bottom-bar-action:hover .bottom-bar-action-title {
+  color: black;
+}
+
+.bottom-bar-action-title {
+  font-size: 9px;
+  display: block;
+  margin-top: -8px;
+  color: #979daa;
+}
