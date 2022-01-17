@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/atoms.css" />
     <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/components/product-list-item.css" />
+    <link rel="stylesheet" href="./css/components/cart-list-item.css" />
     <link rel="stylesheet" href="./css/components/client-list-item.css" />
 </head>
 
@@ -226,10 +227,50 @@
         </div>
 
 
-        <p class="text-center mt-4 mb-2">CART LIST ITEM</p>
-        <div class="row component-full">
+        <p class="text-center mt-4 mb-2">CART LIST ITEM / UPDATE</p>
+        <div class="component shadow-sm">
+          <div class="row cart-product-header">
+            <div class="col-2 cart-product-image">
+                <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-9 col-sm-8">
+                      <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
+                      <p>Код: 3898309839850</p>
+                    </div>
+                    <div class="col-3 col-sm-4">
+                        <div class="float-end cart-product-action-icons">
+                            <img src="assets/trash.svg" alt="Trash" title="Trash" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="cart-product-footer">
+            <div class="cart-product-qty d-flex justify-content-between">
+                <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
+                <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
+                    <option selected>Брой</option>
+                    <option value="1">Стек</option>
+                </select>
+            </div>
+            <div>
+              <button type="button" class="btn btn-sm">Обнови</button>
+            </div>
+          </div>
+          <div class="cart-product-prices">
+            <div class="price-single d-flex justify-content-between">
+                <p class="gray-3">Ед. цена:</p>
+                <p class="gray-1">2,90 лв.</p>
+            </div>
+            <div class="d-flex justify-content-between body-bold">
+                <p>1 бр.</p>
+                <p class="gray-1">12,98 лв.</p>
+            </div>
+          </div>
+      </div>
 
-        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
