@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/components/order-list-item.css" />
     <link rel="stylesheet" href="./css/components/order-product-list-item.css" />
     <link rel="stylesheet" href="./css/components/bottom-bar.css" />
+    <link rel="stylesheet" href="./css/components/list-top-components.css" />
 </head>
 
 <body>
@@ -188,7 +189,7 @@
                         <div class="float-end product-action-icons">
                             <img src="assets/info.svg" alt="Info" title="Info" />
                             <a href="#">
-                              <img src="assets/star.svg" alt="Star" title="Star" />
+                                <img src="assets/star.svg" alt="Star" title="Star" />
                             </a>
                         </div>
                     </div>
@@ -242,7 +243,7 @@
                         <div class="float-end product-action-icons">
                             <img src="assets/info.svg" alt="Info" title="Info" />
                             <a href="#">
-                              <img src="assets/star.svg" alt="Star" title="Star" />
+                                <img src="assets/star.svg" alt="Star" title="Star" />
                             </a>
                         </div>
                     </div>
@@ -290,7 +291,7 @@
                         <div class="col-3 col-sm-4">
                             <div class="float-end cart-product-action-icons">
                                 <a href="#">
-                                  <img src="assets/trash.svg" alt="Trash" title="Trash" />
+                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
                                 </a>
                             </div>
                         </div>
@@ -320,6 +321,8 @@
                 </div>
             </div>
         </div>
+
+        <br />
 
         <p class="text-center mt-4 mb-2">CART LIST ITEM FULL COMPONENT (TEST)</p>
         <div class="component-full shadow-sm">
@@ -336,7 +339,7 @@
                         <div class="col-3 col-sm-4">
                             <div class="float-end cart-product-action-icons">
                                 <a href="#">
-                                  <img src="assets/trash.svg" alt="Trash" title="Trash" />
+                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
                                 </a>
                             </div>
                         </div>
@@ -367,6 +370,7 @@
             </div>
         </div>
 
+        <br />
 
         <p class="text-center mt-4 mb-2">ORDER LIST ITEM</p>
         <div class="row component-full">
@@ -380,22 +384,50 @@
             </div>
         </div>
 
+        <br />
 
         <p class="text-center mt-4 mb-2">ORDER PRODUCTS LIST ITEM</p>
         <div class="row component-full">
-          <div class="col-4 order-product-image">
-            <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-          </div>
-          <div class="col-8 cart-product-name">
-            <p class="gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-            <p>Код: 3898309839850</p>
-            <div class="d-flex justify-content-between body-bold">
-              <p>6 бр.</p>
-              <p class="gray-1">95,80 лв.</p>
+            <div class="col-4 order-product-image">
+                <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
             </div>
-          </div>
+            <div class="col-8 cart-product-name">
+                <p class="gray-1 body-bold">Лютеница Дерони тъмно синя</p>
+                <p>Код: 3898309839850</p>
+                <div class="d-flex justify-content-between body-bold">
+                    <p>6 бр.</p>
+                    <p class="gray-1">95,80 лв.</p>
+                </div>
+            </div>
         </div>
 
+        <br />
+
+        <p class="text-center mt-4 mb-2">LIST TOP COMPONENTS</p>
+        <div class="component-full body-bg">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="subtitle-big-medium">Клиенти <small class="text-muted">(389)</small></h3>
+                </div>
+                <div class="col-4 text-end">
+                    <a href="#" title="Добави нов клиент" class="btn btn-xs light shadow-sm">+ нов</a>
+                </div>
+                <div class="col-12 position-relative">
+                    <input class="form-control gray-2" type="text" placeholder="Search" aria-label="qty-input">
+                    <button type="submit" class="search-icon-submit position-absolute"><img src="assets/search.svg" alt="Search" title="Search"></button>
+                </div>
+                <div class="table-responsive hidden-scroll-mobile mt-3">
+                    <p class="text-nowrap">
+                        <a href="#" title="Unselected" class="badge filter-badge br-lg">Unselected</a>
+                        <a href="#" title="A second item" class="badge filter-badge br-lg">A second item</a>
+                        <a href="#" title="A third item" class="badge filter-badge br-lg">A third item</a>
+                        <a href="#" title="An item" class="badge filter-badge br-lg">An item</a>
+                        <a href="#" title="A second item" class="badge filter-badge br-lg">A second item</a>
+                        <a href="#" title="A third item" class="badge filter-badge br-lg">A third item</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
