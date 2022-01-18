@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/components/order-product-list-item.css" />
     <link rel="stylesheet" href="./css/components/bottom-bar.css" />
+    <link rel="stylesheet" href="./css/components/list-top-components.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                         </a>
                     </div>
                     <div class="col header-nav-icon">
-                        <a href="#" title="">
+                        <a href="clients-list.html" title="">
                             <img src="assets/clients.svg" alt="Clients" title="Clients" />
                         </a>
                     </div>
@@ -68,20 +69,17 @@
     </header> <!-- container-fluid.// -->
     <!-- ============ HEADER COMPONENT END (with hiding) ============= -->
 
-    <div id="main">
-        <a href="/" class="mt-3 ms-3 btn btn-secondary">Back to Home</a>
-        <h1 class="text-center mt-5">ORDER PRODUCTS LIST</h1>
-        
+    <div id="main">        
 
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
         <nav class="navbar fixed-bottom bottom-bar">
             <div class="container-fluid">
                 <div class="row row-cols-5 w-100">
-                    <a href="#" class="col bottom-bar-action text-center">
+                    <a href="products-list.html" class="col bottom-bar-action text-center">
                         <img src="./assets/products.svg" alt="Продукти" />
                         <small class="bottom-bar-action-title">ПРОДУКТИ</small>
                     </a>
-                    <a href="#" class="col bottom-bar-action text-center">
+                    <a href="orders-list.html" class="col bottom-bar-action text-center">
                         <img src="./assets/orders.svg" alt="Поръчки" />
                         <small class="bottom-bar-action-title">ПОРЪЧКИ</small>
                     </a>
@@ -93,7 +91,7 @@
                         <img src="./assets/star.svg" alt="Любими" />
                         <small class="bottom-bar-action-title">ЛЮБИМИ</small>
                     </a>
-                    <a href="#" class="col bottom-bar-action text-center">
+                    <a href="cart-list.html" class="col bottom-bar-action text-center">
                         <img src="./assets/cart.svg" alt="Количка" />
                         <small class="bottom-bar-action-title">КОЛИЧКА</small>
                     </a>
@@ -102,6 +100,32 @@
         </nav>
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
 
+        <div class="component-full body-bg">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="subtitle-big-medium">Клиенти <small class="text-muted">(389)</small></h3>
+                </div>
+                <div class="col-4 text-end">
+                    <a href="#" title="Добави нов клиент" class="btn btn-xs light shadow-sm">+ нов</a>
+                </div>
+                <div class="col-12 position-relative">
+                    <input class="form-control gray-2" type="text" placeholder="Search" aria-label="qty-input">
+                    <button type="submit" class="search-icon-submit position-absolute"><img src="assets/search.svg" alt="Search" title="Search"></button>
+                </div>
+                <div class="table-responsive hidden-scroll-mobile mt-3">
+                    <p class="text-nowrap">
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Избран" class="badge filter-badge selected br-lg">Избран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="row component-full">
             <div class="col-4 order-product-image">
                 <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
