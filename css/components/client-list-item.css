@@ -2,7 +2,6 @@
   font-weight: 500;
   font-size: 16px;
 }
-
 .client-properties .client-property {
   padding: 0 16px 0 0;
   font-weight: 400;
@@ -14,7 +13,6 @@
 .client-properties .client-property-alert {
   color: red;
 }
-
 .client-options {
   height: 32px;
   width: 32px;
