@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Components</title>
+
+    <meta name="description" content="Components pieces" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/config.css" />
+    <link rel="stylesheet" href="./css/atoms.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/client-list-item.css" />
+    <link rel="stylesheet" href="./css/components/bottom-bar.css" />
+    <link rel="stylesheet" href="./css/components/list-top-components.css" />
+</head>
+
+<body>
+    <!-- ============= HEADER COMPONENT (with hiding and clients names) ============== -->
+    <header class="container-fluid autohide px-0">
+        <nav class="row navbar header-bar navbar-expand-lg">
+            <div class="col-4">
+                <a class="navbar-brand" href="/"><img src="assets/logo.png" title="logo" alt="logo" /></a>
+            </div>
+            <div class="col-8">
+                <div class="header-nav row float-end d-flex align-items-center">
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/calendar.svg" alt="Calendar" title="Calendar" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/clients.svg" alt="Clients" title="Clients" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon">
+                        <a href="#" title="">
+                            <img src="assets/notifications.svg" alt="Notifications" title="Notifications" />
+                        </a>
+                    </div>
+                    <div class="col header-nav-icon profile text-center body-bold">
+                        <a href="#" title="">ИГ</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="accordion position-relative">
+            <div class="accordion-item position-absolute w-100 border-0" id="clientNamesAccordion">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed chosen-client-collapse rounded-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ИМЕ НА ИЗБРАН КЛИЕНТ
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse bg-gray-2" aria-labelledby="headingThree" data-bs-parent="#clientListItem">
+                    <div class="accordion-body d-flex justify-content-between">
+                        <a href="#" title="Профил" class="btn btn-xs ghost light">Профил</a>
+                        <a href="#" title="Отмени" class="btn btn-xs light">Отмени</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- container-fluid.// -->
+    <!-- ============ HEADER COMPONENT END (with hiding) ============= -->
+
+    <div id="main">
+        <a href="/" class="mt-3 ms-3 btn btn-secondary">Back to Home</a>
+        <h1 class="text-center mt-5">CLIENTS LIST</h1>
+
+
+        <!-- ============= BOTTOM BAR COMPONENT ============== -->
+        <nav class="navbar fixed-bottom bottom-bar">
+            <div class="container-fluid">
+                <div class="row row-cols-5 w-100">
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/products.svg" alt="Продукти" />
+                        <small class="bottom-bar-action-title">ПРОДУКТИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/orders.svg" alt="Поръчки" />
+                        <small class="bottom-bar-action-title">ПОРЪЧКИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/search.svg" alt="Търсене" />
+                        <small class="bottom-bar-action-title">ТЪРСЕНЕ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/star.svg" alt="Любими" />
+                        <small class="bottom-bar-action-title">ЛЮБИМИ</small>
+                    </a>
+                    <a href="#" class="col bottom-bar-action text-center">
+                        <img src="./assets/cart.svg" alt="Количка" />
+                        <small class="bottom-bar-action-title">КОЛИЧКА</small>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- ============= BOTTOM BAR COMPONENT ============== -->
+
+        
+
+        <div class="component-full body-bg">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="subtitle-big-medium">Клиенти <small class="text-muted">(389)</small></h3>
+                </div>
+                <div class="col-4 text-end">
+                    <a href="#" title="Добави нов клиент" class="btn btn-xs light shadow-sm">+ нов</a>
+                </div>
+                <div class="col-12 position-relative">
+                    <input class="form-control gray-2" type="text" placeholder="Search" aria-label="qty-input">
+                    <button type="submit" class="search-icon-submit position-absolute"><img src="assets/search.svg" alt="Search" title="Search"></button>
+                </div>
+                <div class="table-responsive hidden-scroll-mobile mt-3">
+                    <p class="text-nowrap">
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Избран" class="badge filter-badge selected br-lg">Избран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-1">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-1" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-1" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-1">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-2">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-2" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-2" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-2">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-3">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-3" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-3" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-3">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-4">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-4" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-4" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-4">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-5">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-5" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-5" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-5">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-6">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-6" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-6" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-6">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-7">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-7" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-7" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-7">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-8">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-8" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-8" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-8">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+        <div class="component-full">
+            <div class="accordion" id="clientListItem-9">
+                <div class="accordion-item border-0 position-relative">
+                    <h3 class="client-name">ИМЕ НА ТЪРГОВЕЦ</h3>
+                    <ul class="client-properties list-group list-group-horizontal">
+                        <li class="client-property list-group-item border-0">№ 894989</li>
+                        <li class="client-property client-property-alert list-group-item border-0">-8989,99 лв.</li>
+                    </ul>
+                    <a href="#" class="collapsed client-options position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#clientListItemCollapse-9" aria-expanded="false">
+                        <img src="./assets/chevron-up.svg">
+                    </a>
+                    <div id="clientListItemCollapse-9" class="accordion-collapse collapse pt-3" aria-labelledby="headingTwo" data-bs-parent="#clientListItem-9">
+                        <div class="accordion-body px-0 pb-0">
+                            <div class="row row-cols-2">
+                                <div class="col pe-1">
+                                    <a href="#" class="btn btn-md light w-100">Виж профила</a>
+                                </div>
+                                <div class="col ps-1">
+                                    <a href="#" class="btn btn-md w-100">Нова поръчка</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        // JS for show/hide top nav bar
+        document.addEventListener("DOMContentLoaded", function () {
+            const elAutohide = document.querySelector('.autohide');
+            const navbarHeight = elAutohide.querySelector('.navbar').offsetHeight;
+            const clientsNames = elAutohide.querySelector('#clientNamesAccordion').offsetHeight;
+
+            document.body.style.paddingTop = navbarHeight + clientsNames + 'px';
+
+            if (elAutohide) {
+                let last_scroll_top = 0;
+
+                window.addEventListener('scroll', () => {
+                    let scroll_top = window.scrollY;
+
+                    if (scroll_top < last_scroll_top) {
+                        elAutohide.classList.remove('scrolled-down');
+                        elAutohide.classList.add('scrolled-up');
+                    }
+                    else {
+                        elAutohide.classList.remove('scrolled-up');
+                        elAutohide.classList.add('scrolled-down');
+                    }
+
+                    last_scroll_top = scroll_top;
+                });
+            }
+
+            window.console && console.log("Scrolling spy is active...");
+        });
+    </script>
+
+</body>
+
+</html>
