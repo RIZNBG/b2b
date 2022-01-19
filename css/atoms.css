@@ -77,6 +77,10 @@
   background-color: #e0e0e0;
   color: #4f4f4f;
 }
+.btn p{
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .btn.light:hover {
   background-color: #4f4f4f;
   color: #f2f2f2;
@@ -119,6 +123,24 @@
 .btn-xs.ghost.light:hover {
   background-color: white;
   color: #4f4f4f;
+}
+.btn-rounded-sm {
+  color: #F2F2F2;
+  background-color: #828282;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 18px;
+  font-weight: 400;
+}
+.btn-rounded-sm.light { 
+  color: #828282;
+  background-color: #E0E0E0;
+}
+.btn-rounded-sm:hover path {
+  stroke: #4f4f4f;
+}
+.btn-rounded-sm.light:hover path {
+  stroke: #f2f2f2;
 }
 input,
 select {

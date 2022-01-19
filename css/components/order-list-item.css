@@ -4,3 +4,18 @@
 .order-date, .order-price {
   margin-bottom: 8px;
 }
+.component-full.order {
+  margin-bottom: 4px;
+}
+.client-header {
+  margin-top: 28px;
+}
+.client-header p {
+  margin-bottom: 4px;
+}
+#main {
+  background-color: white;
+}
+.switch {
+  margin-top: 16px;
+}

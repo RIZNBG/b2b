@@ -1,6 +1,9 @@
 .body-bg {
   background-color: #F2F2F2 !important;
 }
+.bg-white {
+  background-color: white;
+}
 .gray-border-bottom {
   border-bottom: 1px solid #e5e5e5 !important;
 }
