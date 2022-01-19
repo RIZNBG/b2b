@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Orders list</title>
+    <title>Client orders</title>
 
     <meta name="description" content="Components pieces" />
 
@@ -18,57 +18,9 @@
     <link rel="stylesheet" href="./css/components/header.css" />
     <link rel="stylesheet" href="./css/components/order-list-item.css" />
     <link rel="stylesheet" href="./css/components/bottom-bar.css" />
-    <link rel="stylesheet" href="./css/components/list-top-components.css" />
 </head>
 
 <body>
-    <!-- ============= HEADER COMPONENT (with hiding and clients names) ============== -->
-    <header class="container-fluid autohide px-0">
-        <nav class="row navbar header-bar navbar-expand-lg">
-            <div class="col-4">
-                <a class="navbar-brand" href="/"><img src="assets/logo.png" title="logo" alt="logo" /></a>
-            </div>
-            <div class="col-8">
-                <div class="header-nav row float-end d-flex align-items-center">
-                    <div class="col header-nav-icon">
-                        <a href="#" title="">
-                            <img src="assets/calendar.svg" alt="Calendar" title="Calendar" />
-                        </a>
-                    </div>
-                    <div class="col header-nav-icon">
-                        <a href="clients-list.html" title="">
-                            <img src="assets/clients.svg" alt="Clients" title="Clients" />
-                        </a>
-                    </div>
-                    <div class="col header-nav-icon">
-                        <a href="#" title="">
-                            <img src="assets/notifications.svg" alt="Notifications" title="Notifications" />
-                        </a>
-                    </div>
-                    <div class="col header-nav-icon profile text-center body-bold">
-                        <a href="#" title="">ИГ</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="accordion position-relative">
-            <div class="accordion-item position-absolute w-100 border-0" id="clientNamesAccordion">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed chosen-client-collapse rounded-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        ИМЕ НА ИЗБРАН КЛИЕНТ
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse bg-gray-2" aria-labelledby="headingThree" data-bs-parent="#clientListItem">
-                    <div class="accordion-body d-flex justify-content-between">
-                        <a href="#" title="Профил" class="btn btn-xs ghost light">Профил</a>
-                        <a href="#" title="Отмени" class="btn btn-xs light">Отмени</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header> <!-- container-fluid.// -->
-    <!-- ============ HEADER COMPONENT END (with hiding) ============= -->
-    
     <div id="main">
 
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
@@ -100,15 +52,28 @@
         </nav>
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
 
-        <div class="component-full body-bg">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="subtitle-big-medium">Поръчки <small class="text-muted">(389)</small></h3>
+        <div class="component-full mb-0">
+            <a href="clients-list.html" class="btn btn-rounded-sm light">
+                <div class="d-flex align-items-center">
+                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 20L14 16L18 12" stroke="#828282" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Назад</p>
                 </div>
-                <div class="col-12 position-relative">
-                    <input class="form-control gray-2" type="text" placeholder="Search" aria-label="qty-input">
-                    <button type="submit" class="search-icon-submit position-absolute"><img src="assets/search.svg" alt="Search" title="Search"></button>
+            </a>
+            <div class="client-header">
+                <p class="body-medium gray-1">ИМЕ НА КЛИЕНТА</p>
+                <p>№ 8978909</p>
+                <div class="d-flex justify-content-between">
+                    <span>Салдо:</span>
+                    <span class="body-bold red-1">-9808,89 лв.</span>
                 </div>
+            <div class="switch d-flex align-items-center body-bg row text-center body-medium">
+                <p class="col-6 active">Поръчки</p>
+                <a class="col-6 gray-3" href="#">
+                    <p>Профил</p>
+                </a>
+            </div>
             </div>
         </div>
         <div class="row component-full order shadow-sm">
