@@ -187,3 +187,58 @@ select:invalid {
 .switch a:hover {
   color: #4f4f4f;
 }
+/*SWITCH SLIDER start*/
+.tab-slider--nav {
+  width: 100%;
+  float: left;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.tab-slider--tabs {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 4px 0px;
+  list-style: none;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 40px;
+  user-select: none;
+  background: #f2f2f2;
+}
+.tab-slider--tabs:after {
+  content: "";
+  width: 50%;
+  height: 32px;
+  background: white;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transition: all 250ms ease-in-out;
+  border-radius: 16px;
+}
+.tab-slider--tabs.slide:after {
+  left: calc(50% - 6px);
+}
+.tab-slider--trigger {
+  width: 50%;
+  color: #828282;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 16px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 250ms ease-in-out;
+  user-select: none;
+}
+.tab-slider--trigger.active {
+  color: #4f4f4f;
+}
+.tab-slider--body {
+  margin-bottom: 20px;
+}
+/*SWITCH SLIDER end*/

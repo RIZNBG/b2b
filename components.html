@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    
     <!-- ============= HEADER COMPONENT (with hiding and clients names) ============== -->
     <header class="container-fluid autohide px-0">
         <nav class="row navbar header-bar navbar-expand-lg">
@@ -73,8 +74,36 @@
     </header> <!-- container-fluid.// -->
     <!-- ============ HEADER COMPONENT END (with hiding) ============= -->
 
-    <div id="main">
+    <div id="main" class="body-bg">
+
+        
+
+
         <h1 class="text-center mt-5">Components</h1>
+
+        <p class="text-center mt-4 mb-2">SWITCH SLIDER</p>
+        <div class="test bg-white pt-3">
+            <div class="container">
+                <div class="tab-slider--nav">
+                    <ul class="tab-slider--tabs d-flex justify-content-between">
+                        <li class="tab-slider--trigger active" rel="tab1">Tab 1</li>
+                        <li class="tab-slider--trigger" rel="tab2">Tab 2</li>
+                    </ul>
+                </div>
+                <div class="tab-slider--container">
+                    <div id="tab1" class="tab-slider--body">
+                        <h2>First Tab</h2>
+                        <p>Toggle switch style tab navigation. Currently only works with two tabs.</p>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.</p>
+                    </div>
+                    <div id="tab2" class="tab-slider--body">
+                        <h2>Second Tab</h2>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <p class="text-center mt-4 mb-2">BASE HEADER COMPONENT</p>
         <!-- ============= HEADER COMPONENT (without hiding) ============== -->
@@ -141,6 +170,9 @@
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
 
         <br />
+
+        
+
 
         <p class="text-center mt-4 mb-2">CLIENT LIST ITEM</p>
         <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
@@ -462,7 +494,28 @@
             window.console && console.log("Scrolling spy is active...");
         });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $("document").ready(function(){
+            $(".tab-slider--body").hide();
+            $(".tab-slider--body:first").show();
+        });
 
+        $(".tab-slider--nav li").click(function() {
+            $(".tab-slider--body").hide();
+            var activeTab = $(this).attr("rel");
+            $("#"+activeTab).fadeIn();
+                if($(this).attr("rel") == "tab2"){
+                    $('.tab-slider--tabs').addClass('slide');
+                }else{
+                    $('.tab-slider--tabs').removeClass('slide');
+                }
+            $(".tab-slider--nav li").removeClass("active");
+            $(this).addClass("active");
+        });
+
+  
+    </script>
 </body>
 
 </html>
