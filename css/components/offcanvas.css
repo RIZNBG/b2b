@@ -1,0 +1,13 @@
+.offcanvas.with-footer {
+  margin-bottom: 59px;
+}
+.offcanvas-header {
+  padding-bottom: 24px;
+}
+.offcanvas-body {
+  padding-top: 0;
+}
+.offcanvas-title {
+  padding-top: 8px;
+  color: black;
+}

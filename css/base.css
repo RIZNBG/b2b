@@ -123,27 +123,6 @@ p {
   padding: 18px 12px;
   border-radius: 8px;
 }
-.autohide {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1030;
-}
-.scrolled-down {
-  transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
-}
-.scrolled-up {
-  transform: translateY(0);
-  transition: all 0.3s ease-in-out;
-}
-.navbar p {
-  margin-bottom: 0px;
-  font-size: small;
-  color: rgb(165, 165, 165);
-}
 a {
   text-decoration: none;
   background-color: transparent;
@@ -152,9 +131,6 @@ a {
 .accordion-button,
 .accordion-body {
   padding: 16px;
-}
-.offcanvas.with-footer {
-  margin-bottom: 59px;
 }
 .bottom-bar {
   z-index: 9999;
