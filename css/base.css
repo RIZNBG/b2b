@@ -156,6 +156,9 @@ a {
 .offcanvas.with-footer {
   margin-bottom: 59px;
 }
+.bottom-bar {
+  z-index: 9999;
+}
 
 /* ==========================================================================
    Helper classes
