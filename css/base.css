@@ -159,6 +159,10 @@ a {
 .bottom-bar {
   z-index: 9999;
 }
+.bottom-bar a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /* ==========================================================================
    Helper classes
