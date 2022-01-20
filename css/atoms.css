@@ -145,6 +145,41 @@
 .btn-rounded-sm.light:hover {
   color: #f2f2f2;
 }
+.btn-page {
+  background-color: #e0e0e0;
+  color: black;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-page.active {
+  background-color: #4f4f4f;
+  color: white;
+}
+.btn-page.icon {
+  padding: 0;
+}
+.btn-page.icon:hover path {
+  stroke: white;
+}
+.btn-page.last {
+  margin-right: 0;
+}
+.btn-page:hover {
+  background-color: #4f4f4f;
+  color: white;
+}
+.btn-page.active:hover {
+  background-color: #e0e0e0;
+  color: black;
+}
 input,
 select {
   color: #828282;
