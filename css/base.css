@@ -113,10 +113,13 @@ p {
 .component-full {
   background-color: white;
   padding: 16px;
+  margin-bottom: 8px;
 }
 .component {
   background-color: white;
-  margin: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
   padding: 18px 12px;
   border-radius: 8px;
 }
