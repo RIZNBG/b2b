@@ -225,7 +225,6 @@ select:invalid {
 .tab-slider--trigger {
   width: 50%;
   color: #828282;
-  text-transform: uppercase;
   text-align: center;
   padding: 5px 16px;
   position: relative;

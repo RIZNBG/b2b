@@ -16,6 +16,9 @@
 #main {
   background-color: white;
 }
-.switch {
-  margin-top: 16px;
+.client-detail {
+  margin-bottom: 16px;
+}
+.details-label {
+  margin-bottom: 4px;
 }
