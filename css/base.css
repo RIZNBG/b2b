@@ -154,7 +154,7 @@ a {
   padding: 16px;
 }
 .offcanvas.with-footer {
-  bottom: 59px;
+  margin-bottom: 59px;
 }
 
 /* ==========================================================================
