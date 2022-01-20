@@ -153,6 +153,9 @@ a {
 .accordion-body {
   padding: 16px;
 }
+.offcanvas.with-footer {
+  bottom: 59px;
+}
 
 /* ==========================================================================
    Helper classes
