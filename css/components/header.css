@@ -45,13 +45,11 @@ nav.header-bar {
 .header-nav .header-nav-icon.profile:hover a {
   background-color: transparent;
   color: #4f4f4f !important;
-  display: block;
 }
 .header-nav .header-nav-icon.profile a {
   background-color: #4f4f4f;
   color: white !important;
 }
-
 .chosen-client-collapse {
   height: 32px;
   background-color: #4f4f4f !important;
