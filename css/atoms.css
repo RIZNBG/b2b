@@ -273,3 +273,7 @@ select:invalid {
   color: #4f4f4f;
 }
 /*SWITCH SLIDER end*/
+
+#clientListItemCollapse .accordion-body {
+  padding-top: 32px;
+}
