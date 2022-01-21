@@ -4,9 +4,6 @@
 .offcanvas-header, .cat-heading {
   padding-bottom: 24px;
 }
-.offcanvas-body {
-  padding-top: 0;
-}
 .offcanvas-title {
   padding-top: 8px;
   color: black;
@@ -19,7 +16,6 @@
   margin-bottom: 24px;
 }
 .cat-link, .cat-link-icon {
-  display: block;
   padding-top: 13px;
   padding-bottom: 13px;
   border-bottom: 1px solid #f2f2f2;
