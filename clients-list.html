@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/components/client-list-item.css" />
     <link rel="stylesheet" href="./css/components/bottom-bar.css" />
     <link rel="stylesheet" href="./css/components/list-top-components.css" />
+    <link rel="stylesheet" href="./css/components/offcanvas.css" />
 </head>
 
 <body>
@@ -75,7 +76,7 @@
         <nav class="navbar fixed-bottom bottom-bar">
             <div class="container-fluid">
                 <div class="row row-cols-5 w-100">
-                    <a href="products-list.html" class="col bottom-bar-action text-center">
+                    <a class="col bottom-bar-action text-center" data-bs-toggle="offcanvas" href="#offcanvasProducts" role="button" aria-controls="offcanvasProducts">
                         <img src="./assets/products.svg" alt="Продукти" />
                         <small class="bottom-bar-action-title">ПРОДУКТИ</small>
                     </a>
@@ -411,6 +412,347 @@
         <!-- ============= CLIENT LIST ITEM COMPONENT ============== -->
     </div>
 
+
+    <!-- Products menu canvas level 1 -->
+    <div class="offcanvas offcanvas-start with-footer" tabindex="-1" id="offcanvasProducts" aria-labelledby="offcanvasProductsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title subtitle-medium" id="offcanvasProductsLabel">Меню</h5>
+          <a href="#" class="btn btn-rounded-close light text-reset float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="d-flex align-items-center">
+                <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 10L10 22" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 10L22 22" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+          </a>
+        </div>
+        <div class="offcanvas-body">
+            <div class="switch-slider">
+                <div class="tab-slider--nav">
+                    <ul class="tab-slider--tabs d-flex justify-content-between">
+                        <li class="tab-slider--trigger active" rel="tab1">Категории</li>
+                        <li class="tab-slider--trigger" rel="tab2">Марки</li>
+                    </ul>
+                </div>
+                <div class="tab-slider--container">
+                    <div id="tab1" class="tab-slider--body slider-prd">
+                        <div class="component-full subtitle-medium p-0">
+                            <a class="cat-link-icon" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <svg width="32" height="32" class="left-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.3333 24V22.3333C20.3333 20.4924 18.8409 19 17 19H10.3333C8.49238 19 7 20.4924 7 22.3333V24" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="13.6667" cy="12.3333" r="3.33333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.3333 24V22.3333C25.3322 20.8143 24.3042 19.4881 22.8333 19.1083" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.10833C20.9749 9.48597 22.0065 10.815 22.0065 12.3375C22.0065 13.86 20.9749 15.189 19.5 15.5667" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="cat-name">Category Item Icon</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link-icon" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <svg width="32" height="32" class="left-icon"  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.3333 24V22.3333C20.3333 20.4924 18.8409 19 17 19H10.3333C8.49238 19 7 20.4924 7 22.3333V24" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="13.6667" cy="12.3333" r="3.33333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.3333 24V22.3333C25.3322 20.8143 24.3042 19.4881 22.8333 19.1083" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.10833C20.9749 9.48597 22.0065 10.815 22.0065 12.3375C22.0065 13.86 20.9749 15.189 19.5 15.5667" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="cat-name">Category Item Icon</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Category Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-slider--body slider-prd">
+                        <div class="component-full subtitle-medium p-0">
+                            <a class="cat-link-icon" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <svg width="32" height="32" class="left-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.3333 24V22.3333C20.3333 20.4924 18.8409 19 17 19H10.3333C8.49238 19 7 20.4924 7 22.3333V24" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="13.6667" cy="12.3333" r="3.33333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.3333 24V22.3333C25.3322 20.8143 24.3042 19.4881 22.8333 19.1083" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.10833C20.9749 9.48597 22.0065 10.815 22.0065 12.3375C22.0065 13.86 20.9749 15.189 19.5 15.5667" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="cat-name">Brand Item Icon</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link-icon" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <svg width="32" height="32" class="left-icon"  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.3333 24V22.3333C20.3333 20.4924 18.8409 19 17 19H10.3333C8.49238 19 7 20.4924 7 22.3333V24" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="13.6667" cy="12.3333" r="3.33333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.3333 24V22.3333C25.3322 20.8143 24.3042 19.4881 22.8333 19.1083" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.5 9.10833C20.9749 9.48597 22.0065 10.815 22.0065 12.3375C22.0065 13.86 20.9749 15.189 19.5 15.5667" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="cat-name">Brand Item Icon</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a class="cat-link" data-bs-toggle="offcanvas" href="#offcanvasLevel2" role="button" aria-controls="offcanvasLevel2">
+                                <p class="cat-name">Brand Item</p>
+                                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Products menu canvas level 2 (sub-categories) -->
+    <div class="offcanvas offcanvas-start with-footer" tabindex="-1" id="offcanvasLevel2" aria-labelledby="offcanvasLevel2Label">
+        <div class="offcanvas-header">
+        <a class="btn btn-rounded-sm light" data-bs-toggle="offcanvas" href="#offcanvasProducts" role="button" aria-controls="offcanvasProducts">
+            <div class="d-flex align-items-center">
+                <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 20L14 16L18 12" stroke="#828282" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Назад</p>
+            </div>
+        </a>
+        <a href="#" class="btn btn-rounded-close light text-reset float-end" data-bs-dismiss="offcanvas" aria-label="Close">
+            <div class="d-flex align-items-center">
+                <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 10L10 22" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 10L22 22" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+        </a>
+        </div>
+        <div class="offcanvas-body">
+            <h5 class="offcanvas-title subtitle-medium cat-heading" id="offcanvasLevel2Label">Сосове</h5>
+            <a class="cat-link border-0" href="#">
+                <p class="cat-name">Виж Всички</p>
+            </a>
+            <a class="cat-link" href="#">
+                <p class="cat-name">Sub Category Item</p>
+                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a class="cat-link" href="#">
+                <p class="cat-name">Sub Category Item</p>
+                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a class="cat-link" href="#">
+                <p class="cat-name">Sub Category Item</p>
+                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a class="cat-link" href="#">
+                <p class="cat-name">Sub Category Item</p>
+                <svg width="32" class="float-end" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 12L18 16L14 20" stroke="#4F4F4F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script>
@@ -444,7 +786,7 @@
             window.console && console.log("Scrolling spy is active...");
         });
     </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

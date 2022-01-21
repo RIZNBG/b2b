@@ -1,7 +1,7 @@
 .offcanvas.with-footer {
   margin-bottom: 59px;
 }
-.offcanvas-header {
+.offcanvas-header, .cat-heading {
   padding-bottom: 24px;
 }
 .offcanvas-body {
@@ -10,4 +10,30 @@
 .offcanvas-title {
   padding-top: 8px;
   color: black;
+}
+.btn-rounded-close {
+  padding: 5px;
+  border-radius: 18px;
+}
+.offcanvas .tab-slider--nav {
+  margin-bottom: 24px;
+}
+.cat-link, .cat-link-icon {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cat-link:hover, .cat-link-icon:hover {
+  color: #4f4f4f;
+}
+.cat-link-icon {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.cat-name {
+  display: inline-block;
+}
+.left-icon {
+  margin-right: 8px;
 }

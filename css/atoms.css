@@ -139,7 +139,7 @@
 .btn-rounded-sm:hover path {
   stroke: #4f4f4f;
 }
-.btn-rounded-sm.light:hover path {
+.btn-rounded-sm.light:hover path, .btn-rounded-close:hover path {
   stroke: #f2f2f2;
 }
 .btn-rounded-sm.light:hover {
