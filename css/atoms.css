@@ -180,6 +180,10 @@
   background-color: #e0e0e0;
   color: black;
 }
+.btn-rounded-close {
+  padding: 5px;
+  border-radius: 18px;
+}
 input,
 select {
   color: #828282;
