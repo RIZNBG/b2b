@@ -101,6 +101,9 @@
 .orange-1 {
   color: var(--orange-1);
 }
+.blue-2 {
+  color: #2D9CDB;
+}
 .br-xs {
   border-radius: var(--xs);
 }

@@ -101,431 +101,61 @@
         </nav>
         <!-- ============= BOTTOM BAR COMPONENT ============== -->
 
-        <div class="component-full body-bg">
+        <div class="component-full body-bg mb-0">
             <div class="row">
                 <div class="col-8">
-                    <h3 class="subtitle-medium">Клиенти <small class="text-muted">(389)</small></h3>
+                    <h3 class="subtitle-medium gray-1 mt-1 mb-0">Количка</h3>
                 </div>
                 <div class="col-4 text-end">
-                    <a href="#" title="Добави нов клиент" class="btn btn-xs light shadow-sm">+ нов</a>
+                    <a href="#" title="Бележка">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3333 8H10.6667C9.74619 8 9 8.74619 9 9.66667V23C9 23.9205 9.74619 24.6667 10.6667 24.6667H20.6667C21.5871 24.6667 22.3333 23.9205 22.3333 23V13L17.3333 8Z" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.3333 8V13H22.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 17.1667H12.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 20.5H12.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 13.8333H13.1667H12.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" title="График">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="9" y="9.66667" width="15" height="15" rx="1.66667" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.8333 8V11.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.1667 8V11.3333" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 14.6667H24" stroke="#4F4F4F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
                 </div>
-                <div class="col-12 position-relative">
-                    <input class="form-control gray-2" type="text" placeholder="Search" aria-label="qty-input">
-                    <button type="submit" class="search-icon-submit position-absolute"><img src="assets/search.svg" alt="Search" title="Search"></button>
-                </div>
-                <div class="table-responsive hidden-scroll-mobile mt-3">
-                    <p class="text-nowrap">
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Избран" class="badge filter-badge selected br-lg">Избран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                        <a href="#" title="Неизбран" class="badge filter-badge br-lg">Неизбран</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 mt-3">
+                    <span class="gray-3 caption">Клиент:</span>
+                    <p class="body-medium">АТАНАС ПАЛАЗОВ-НАДКА ЯНЕВА ЕТ | ПАНИЧЕРИ</p>
                 </div>
             </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
         </div>
+        <div class="component shadow-sm mb-3 p-2 blue-2">
+            <p class="caption">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                    <g clip-path="url(#clip0_389_1877)">
+                    <path d="M20 10.25H8.75V20H20V10.25Z" stroke="#2D9CDB" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 14H23L25.25 16.25V20H20V14Z" stroke="#2D9CDB" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.125 23.75C13.1605 23.75 14 22.9105 14 21.875C14 20.8395 13.1605 20 12.125 20C11.0895 20 10.25 20.8395 10.25 21.875C10.25 22.9105 11.0895 23.75 12.125 23.75Z" stroke="#2D9CDB" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.875 23.75C22.9105 23.75 23.75 22.9105 23.75 21.875C23.75 20.8395 22.9105 20 21.875 20C20.8395 20 20 20.8395 20 21.875C20 22.9105 20.8395 23.75 21.875 23.75Z" stroke="#2D9CDB" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_389_1877">
+                    <rect width="18" height="18" fill="white" transform="translate(8 8)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                Доставка до маршрут:&nbsp; <span class="body-bold">Понеделник</span>
+            </p>
+        </div>
+        <div class="component-full body-bg py-0">
+            <p>236 продукта</p>
+        </div>
+        
 
-        <div class="component-full shadow-sm">
+        <div class="component shadow-sm">
             <div class="row cart-product-header">
                 <div class="col-2 cart-product-image text-center">
                     <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
@@ -569,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <div class="component-full shadow-sm">
+        <div class="component shadow-sm">
             <div class="row cart-product-header">
                 <div class="col-2 cart-product-image text-center">
                     <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
@@ -613,225 +243,12 @@
                 </div>
             </div>
         </div>
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
-        </div>
-        <div class="component-full shadow-sm">
-            <div class="row cart-product-header">
-                <div class="col-2 cart-product-image text-center">
-                    <img src="assets/product.jpg" alt="Product" title="Product" class="img-fluid" />
-                </div>
-                <div class="col-10">
-                    <div class="row">
-                        <div class="col-9 col-sm-8">
-                            <p class="cart-product-name gray-1 body-bold">Лютеница Дерони тъмно синя</p>
-                            <p>Код: 3898309839850</p>
-                        </div>
-                        <div class="col-3 col-sm-4">
-                            <div class="float-end cart-product-action-icons">
-                                <a href="#">
-                                    <img src="assets/trash.svg" alt="Trash" title="Trash" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-product-footer">
-                <div class="cart-product-qty d-flex justify-content-between">
-                    <input class="cart-product-qty-input form-control gray-2" type="number" placeholder="Input" aria-label="qty-input">
-                    <select class="cart-product-measure form-select gray-2" aria-label="measure-select">
-                        <option selected>Брой</option>
-                        <option value="1">Стек</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-sm">Обнови</button>
-                </div>
-            </div>
-            <div class="cart-product-prices">
-                <div class="price-single d-flex justify-content-between">
-                    <p class="gray-3">Ед. цена:</p>
-                    <p class="gray-1">2,90 лв.</p>
-                </div>
-                <div class="d-flex justify-content-between body-bold">
-                    <p>Общо</p>
-                    <p class="gray-1">95,80 лв.</p>
-                </div>
-            </div>
+        
+        <div class="component shadow-sm mt-4">
+            <p class="gray-3 mb-2">Данъчна основа: <span class="float-end gray-1">81,20 лв.</span></p>
+            <p class="gray-3 mb-2">ДДС: <span class="float-end gray-1">14,60 лв.</span></p>
+            <p class="body-bold mb-2">Общо: <span class="float-end gray-1">95,80 лв.</span></p>
+            <btn class="btn btn-rounded w-100 order-button">ПОРЪЧАЙ</btn>
         </div>
 
     </div>
