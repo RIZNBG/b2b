@@ -22,3 +22,10 @@
 .cart-product-prices .price-single {
   margin-bottom: 4px;
 }
+.order-button {
+  background-color: #219653;
+  border-radius: 26px;
+  font-size: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
