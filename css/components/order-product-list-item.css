@@ -1,5 +1,5 @@
 .order-product-image {
-  padding-right: 12px;
+  padding-right: var(--md);
 }
 .cart-product-name p{
   margin-bottom: var(--sm);

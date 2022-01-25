@@ -18,8 +18,8 @@
   color: red;
 }
 .client-options, .client-options:hover {
-  height: 32px;
-  width: 32px;
+  height: var(--xxl);
+  width: var(--xxl);
   top: 9px;
 }
 .client-options {

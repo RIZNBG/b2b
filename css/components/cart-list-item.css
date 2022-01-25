@@ -5,7 +5,7 @@
   --lg: 16px;
 }
 .cart-product-image {
-  padding-right: 12px;
+  padding-right: var(--md);
 }
 .cart-product-header {
   margin-bottom: var(--lg);
@@ -26,12 +26,12 @@
   margin-bottom: var(--xs);
 }
 .cart-product-prices .price-single {
-  margin-bottom: 4px;
+  margin-bottom: var(--xs);
 }
 .order-button {
-  background-color: #219653;
+  background-color: var(--green-1);
   border-radius: 26px;
-  font-size: 18px;
+  font-size: var(--bg);
   padding-top: 9px;
   padding-bottom: 9px;
 }
