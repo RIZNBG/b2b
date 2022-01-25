@@ -4,22 +4,14 @@
 .offcanvas-header, .cat-heading {
   padding-bottom: var(--xl);
 }
-.offcanvas-body {
-  padding-top: 0;
-}
 .offcanvas-title {
   padding-top: var(--sm);
   color: var(--black);
-}
-.btn-rounded-close {
-  padding: 5px;
-  border-radius: var(--bg);;
 }
 .offcanvas .tab-slider--nav {
   margin-bottom: var(--xl);
 }
 .cat-link, .cat-link-icon {
-  display: block;
   padding-top: 13px;
   padding-bottom: 13px;
   border-bottom: 1px solid var(--gray-6);
@@ -30,9 +22,6 @@
 .cat-link-icon {
   padding-top: var(--sm);
   padding-bottom: var(--sm);
-}
-.cat-name {
-  display: inline-block;
 }
 .left-icon {
   margin-right: var(--sm);

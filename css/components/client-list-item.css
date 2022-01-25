@@ -17,16 +17,13 @@
 .client-properties .client-property-alert {
   color: red;
 }
-.client-options {
-  height: var(--xxl);
-  width: var(--xxl);
+.client-options, .client-options:hover {
+  height: 32px;
+  width: 32px;
   top: 9px;
-  transition: transform 250ms ease;
 }
-.client-options:hover {
-  height: var(--xxl);
-  width: var(--xxl);
-  top: 9px;
+.client-options {
+  transition: transform 250ms ease;
 }
 .client-options.collapsed {
   transition: transform 250ms ease;

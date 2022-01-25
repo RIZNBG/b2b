@@ -101,9 +101,9 @@
   background-color: var(--gray-5);
   color: var(--gray-2);
 }
-.btn p {
-  padding-left: var(--sm);
-  padding-right: var(--sm);
+.btn span{
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .btn.light:hover {
   background-color: var(--gray-2);
@@ -204,6 +204,10 @@
 .btn-page.active:hover {
   background-color: var(--gray-5);
   color: var(--black);
+}
+.btn-rounded-close {
+  padding: 5px;
+  border-radius: 18px;
 }
 input,
 select {
