@@ -24,7 +24,7 @@
 }
 .badge {
   font-weight: 400;
-  font-size: var(--lg);
+  font-size: 14px;
   line-height: 22px;
 }
 [class*="badge-"] {
@@ -87,7 +87,7 @@
   color: var(--black);
 }
 .btn {
-  font-size: var(--lg);
+  font-size: 14px;
   line-height: 22px;
   font-weight: 700;
   background-color: var(--gray-2);

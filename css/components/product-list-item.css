@@ -4,7 +4,7 @@
 }
 .product-header {
   margin-top: var(--md);
-  margin-bottom: var(--lg);;
+  margin-bottom: var(--lg);
 }
 .product-footer .product-qty {
   margin-right: var(--sm);
@@ -19,7 +19,7 @@
   margin-bottom: var(--xs);
 }
 .product-footer {
-  margin-top: var(--lg);;
+  margin-top: var(--lg);
 }
 .product-old-price {
   margin-right: 5px;

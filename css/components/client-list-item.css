@@ -4,7 +4,6 @@
 }
 .client-name {
   font-weight: 500;
-  font-size: var(--lg);
 }
 .client-properties .client-property {
   padding: 0 var(--lg) 0 0;
