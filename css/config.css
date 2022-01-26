@@ -34,10 +34,10 @@
   background-color: var(--white);
 }
 .gray-border-bottom {
-  border-bottom: 1px solid var(--gray-border) !important;
+  border-bottom: 1px solid var(--gray-5) !important;
 }
 .caption {
-  font-size: --md;
+  font-size: var(--md);
   line-height: auto;
   display: flex;
   align-items: center;
