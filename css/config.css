@@ -37,8 +37,8 @@
   border-bottom: 1px solid var(--gray-border) !important;
 }
 .caption {
-  font-size: 14px;
-  line-height: var(--lg);
+  font-size: --md;
+  line-height: auto;
   display: flex;
   align-items: center;
 }
@@ -49,20 +49,20 @@
   font-weight: bold;
 }
 .subtitle-regular {
-  font-size: var(--bg);
+  font-size: var(--lg);
   line-height: var(--xl);
 }
 .subtitle-medium {
-  font-size: var(--bg);
+  font-size: var(--lg);
   line-height: var(--xl);
   font-weight: 500;
 }
-.subtitle-big-regular {
-  font-size: var(--xl);
+.title-regular {
+  font-size: var(--bg);
   line-height: 30px;
 }
-.subtitle-big-medium {
-  font-size: var(--xl);
+.title-medium {
+  font-size: var(--bg);
   line-height: 30px;
   font-weight: 500;
 }
