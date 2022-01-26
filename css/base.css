@@ -103,9 +103,6 @@ body {
 p {
   margin-bottom: 0;
 }
-#main {
-  margin-bottom: var(--lg);
-}
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -113,13 +110,11 @@ p {
 .component-full {
   background-color: var(--white);
   padding: var(--lg);
-  margin-bottom: var(--sm);
 }
 .component {
   background-color: var(--white);
   margin-left: var(--lg);
   margin-right: var(--lg);
-  margin-bottom: var(--sm);
   padding: var(--bg) var(--md);
   border-radius: var(--sm);
 }
@@ -131,7 +126,9 @@ a {
 .accordion-button,
 .accordion-body {
   padding: var(--lg);
-  font-size: 14px;  
+}
+.accordion-body {
+  padding-top: var(--xxl);
 }
 .bottom-bar {
   z-index: 9999;

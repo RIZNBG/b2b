@@ -38,7 +38,7 @@
 }
 .caption {
   font-size: var(--md);
-  line-height: auto;
+  line-height: normal;
   display: flex;
   align-items: center;
 }

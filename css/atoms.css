@@ -23,8 +23,8 @@
   --xxl: 32px;
 }
 .badge {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 22px;
 }
 [class*="badge-"] {
@@ -69,7 +69,6 @@
 .filter-badge {
   padding: 5px var(--lg);
   display: inline-block;
-  margin-top: var(--sm);
   margin-right: var(--xs);
   background-color: var(--white);
   color: var(--gray-3);
@@ -87,7 +86,7 @@
   color: var(--black);
 }
 .btn {
-  font-size: 14px;
+  font-size: unset;
   line-height: 22px;
   font-weight: 700;
   background-color: var(--gray-2);
