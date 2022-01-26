@@ -94,43 +94,43 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: var(--lg);;
   line-height: 22px;
-  color: #4f4f4f;
-  background-color: #F2F2F2;
+  color: var(--gray-2);
+  background-color: var(--gray-6);
   padding-bottom: 60px;
 }
 p {
   margin-bottom: 0;
 }
 #main {
-  margin-bottom: 16px;
+  margin-bottom: var(--lg);;
 }
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
 .component-full {
-  background-color: white;
-  padding: 16px;
-  margin-bottom: 8px;
+  background-color: var(--white);
+  padding: var(--lg);;
+  margin-bottom: var(--sm);
 }
 .component {
-  background-color: white;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 8px;
-  padding: 18px 12px;
-  border-radius: 8px;
+  background-color: var(--white);
+  margin-left: var(--lg);;
+  margin-right: var(--lg);;
+  margin-bottom: var(--sm);
+  padding: var(--bg) var(--md);
+  border-radius: var(--sm);
 }
 a {
   text-decoration: none;
-  background-color: transparent;
+  background-color: var(--no-color);
   color: unset;
 }
 .accordion-button,
 .accordion-body {
-  padding: 16px;
+  padding: var(--lg);;
 }
 .bottom-bar {
   z-index: 9999;

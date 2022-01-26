@@ -2,29 +2,29 @@
   margin-bottom: 59px;
 }
 .offcanvas-header, .cat-heading {
-  padding-bottom: 24px;
+  padding-bottom: var(--xl);
 }
 .offcanvas-title {
-  padding-top: 8px;
-  color: black;
+  padding-top: var(--sm);
+  color: var(--black);
 }
 .offcanvas .tab-slider--nav {
-  margin-bottom: 24px;
+  margin-bottom: var(--xl);
 }
 .cat-link, .cat-link-icon {
   padding-top: 13px;
   padding-bottom: 13px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid var(--gray-6);
 }
 .cat-link:hover, .cat-link-icon:hover {
-  color: #4f4f4f;
+  color: var(--gray-2);
 }
 .cat-link-icon {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: var(--sm);
+  padding-bottom: var(--sm);
 }
 .left-icon {
-  margin-right: 8px;
+  margin-right: var(--sm);
 }
 .offcanvas {
   transition: none;

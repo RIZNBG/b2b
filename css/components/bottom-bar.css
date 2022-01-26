@@ -1,6 +1,10 @@
+:root{
+  --white: #fff;
+  --black: #000;
+}
 nav.bottom-bar {
   height: 60px;
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -8,7 +12,7 @@ nav.bottom-bar {
   transition: color 250ms ease;
 }
 .bottom-bar-action:hover .bottom-bar-action-title {
-  color: black;
+  color: var(--black);
 }
 
 .bottom-bar-action-title {
