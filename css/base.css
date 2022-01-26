@@ -130,6 +130,9 @@ a {
 .accordion-body {
   padding-top: var(--xxl);
 }
+.accordion-button {
+  font-size: 14px;
+}
 .bottom-bar {
   z-index: 9999;
 }
