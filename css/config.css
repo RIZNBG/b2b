@@ -49,11 +49,11 @@
   font-weight: bold;
 }
 .subtitle-regular {
-  font-size: var(--bg);;
+  font-size: var(--bg);
   line-height: var(--xl);
 }
 .subtitle-medium {
-  font-size: var(--bg);;
+  font-size: var(--bg);
   line-height: var(--xl);
   font-weight: 500;
 }

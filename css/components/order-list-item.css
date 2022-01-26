@@ -1,5 +1,5 @@
 .order-details {
-  padding-right: var(--lg);;
+  padding-right: var(--lg);
 }
 .order-date, .order-price {
   margin-bottom: var(--sm);
@@ -17,7 +17,7 @@
   background-color: var(--white);
 }
 .client-detail {
-  margin-bottom: var(--lg);;
+  margin-bottom: var(--lg);
 }
 .details-label {
   margin-bottom: var(--xs);
