@@ -123,15 +123,12 @@ a {
   background-color: var(--no-color);
   color: unset;
 }
-.accordion-button,
-.accordion-body {
-  padding: var(--lg);
-}
-.accordion-body {
-  padding-top: var(--xxl);
-}
 .accordion-button {
+  padding: var(--lg);
   font-size: 14px;
+}
+.accordion-body {
+  padding: var(--md) var(--lg);
 }
 .bottom-bar {
   z-index: 9999;
