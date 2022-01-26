@@ -2,18 +2,16 @@
   margin-bottom: 59px;
 }
 .offcanvas-header, .cat-heading {
-  padding-bottom: var(--xl);
+  padding-bottom: var(--xxl);
 }
 .offcanvas-title {
-  padding-top: var(--sm);
   color: var(--black);
 }
 .offcanvas .tab-slider--nav {
   margin-bottom: var(--xl);
 }
 .cat-link, .cat-link-icon {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding: var(--md) 0;
   border-bottom: 1px solid var(--gray-6);
 }
 .cat-link:hover, .cat-link-icon:hover {
