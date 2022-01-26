@@ -24,6 +24,7 @@
   --bg: 18px;
   --xl: 24px;
   --xxl: 32px;
+  --bs-body-font-size: unset;
 }
 
 .body-bg {
