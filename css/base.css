@@ -107,16 +107,17 @@ p {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
-.component-full {
+.component-full, .component {
   background-color: var(--white);
   padding: var(--lg);
 }
 .component {
-  background-color: var(--white);
-  margin-left: var(--lg);
-  margin-right: var(--lg);
-  padding: var(--bg) var(--md);
+  margin: 0 var(--lg);
   border-radius: var(--sm);
+}
+.form-control {
+  font-size: 14px;
+  line-height: 22px;
 }
 a {
   text-decoration: none;
@@ -145,6 +146,9 @@ a {
 /*
  * Hide visually and from screen readers
  */
+.no-hover-color {
+  color: unset !important;
+}
 
 .hidden,
 [hidden] {
