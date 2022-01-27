@@ -16,9 +16,3 @@
 #main {
   background-color: var(--white);
 }
-.client-detail {
-  margin-bottom: var(--lg);
-}
-.details-label {
-  margin-bottom: var(--xs);
-}
